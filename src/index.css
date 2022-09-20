@@ -1,8 +1,11 @@
-.navbar {
-    background-color:#E0ECFD;
-    border-radius: 10px;
+
+.header {
+    margin:10px;
 }
 
+.sidebar {
+    background: #E0ECFD;
+}
 .links {
     float: left;
     display: block;

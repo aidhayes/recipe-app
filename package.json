@@ -10,6 +10,7 @@
     "bootstrap-icons": "^1.9.1",
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",
+    "react-bootstrap-sidebar-menu": "^2.0.3",
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
     "react-scripts": "^2.1.3",
