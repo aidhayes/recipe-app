@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom'; 
 import 'bootstrap/dist/css/bootstrap.css';
-class MyFirstComponent extends React.Component{
-    render(){
-        
-    }
-}
+import './index.css'
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<MyFirstComponent />)
+root.render(
+    <>
+    <h1>Cooking Daddy</h1>
+    </>
+);
