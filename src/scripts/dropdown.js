@@ -6,7 +6,7 @@ function ProfileDropdown() {
         <Dropdown>
             <Dropdown.Toggle variant="success" id="dropdown-basic-button"
             title={
-                
+                <Image src=""/>
             }>
                 Profile
             </Dropdown.Toggle>
