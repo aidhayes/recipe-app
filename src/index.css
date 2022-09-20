@@ -1,0 +1,18 @@
+.navbar {
+    background-color:#E0ECFD;
+    border-radius: 10px;
+}
+
+.links {
+    float: left;
+    display: block;
+    text-align:center;
+    font-size: 18px;
+    padding: 10px 40px;
+    width: 33.33%;
+}
+
+.container {
+    display: flex;
+}
+
