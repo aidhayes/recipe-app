@@ -4,6 +4,14 @@ import Navbar from 'react-bootstrap/Navbar';
 import React from 'react';
 import '../index.css';
 
+/**
+ * Creates a navigation bar that will have links to the different
+ * pages on the website
+ * -Home
+ * -Cookbook
+ * -Social
+ * @returns Navbar for accessing different pages on site
+ */
 function Navigator() {
     return (
         <Container className="justify-content-center">
