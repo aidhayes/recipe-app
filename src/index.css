@@ -1,6 +1,10 @@
+.title {
+    text-align: center;
+    color: coral;
+}
 
 .header {
-    margin:10px;
+    margin: 10px;
 }
 
 .sidebar {
