@@ -10,7 +10,7 @@ import Filters from './scripts/sidebar.js';
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <>
-        <h1>Cooking Daddy</h1>
+        <h1 className="title mb-3">Cooking Daddy</h1>
         <Filters/>
     </>
 );

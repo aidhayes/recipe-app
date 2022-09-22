@@ -3,6 +3,7 @@ import Form from 'react-bootstrap/Form';
 //import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import React from 'react';
+import { Dropdown } from 'react-bootstrap';
 /**
  * Creates sidebar with filters to search for recipes
  * @returns 
@@ -16,18 +17,28 @@ function Filters() {
             <SidebarMenu.Body>
                 <Form className="mx-3">
                     <Row>
-                        <Form.Group controlId="protein">
-                            <Form.Label>Protein</Form.Label>
-                            <Form.Check type="checkbox" label="Chicken"/>
-                            <Form.Check type="checkbox" label="Beef"/>
-                            <Form.Check type="checkbox" label="Pork"/>
-                        </Form.Group> 
+                        <Dropdown>
+                                <Form.Group controlId="protein">
+                                <Dropdown.Toggle id="dropdown-basic"><Form.Label>Protein        </Form.Label></Dropdown.Toggle>
+                                    <Dropdown.Menu>
+                                        <Dropdown.Item><Form.Check type="checkbox" label="Chicken"/></Dropdown.Item>
+                                        <Dropdown.Item><Form.Check type="checkbox" label="Beef"/></Dropdown.Item>
+                                       <Dropdown.Item><Form.Check type="checkbox" label="Pork"/></Dropdown.Item>
+                                    </Dropdown.Menu>
+                                </Form.Group>
+                        </Dropdown>
                     </Row>
                     <Row>
-                        <Form.Label>Vegetables</Form.Label>
-                        <Form.Check type="checkbox" label="Tomatoes"/>
-                        <Form.Check type="checkbox" label="Carrots"/>
-                        <Form.Check type="checkbox" label="Spinach"/>
+                    <Dropdown>
+                        <Form.Group controlId="vegetables">
+                            <Dropdown.Toggle id="dropdown-basic"><Form.Label>Vegetables</Form.Label></Dropdown.Toggle>
+                                <Dropdown.Menu>
+                                    <Dropdown.Item><Form.Check type="checkbox" label="Carrots"/></Dropdown.Item>
+                                    <Dropdown.Item><Form.Check type="checkbox" label="Peppers"/></Dropdown.Item>
+                                    <Dropdown.Item><Form.Check type="checkbox" label="Onions"/></Dropdown.Item>
+                                </Dropdown.Menu>
+                            </Form.Group>
+                        </Dropdown>
                     </Row>
                 </Form>
             </SidebarMenu.Body>
