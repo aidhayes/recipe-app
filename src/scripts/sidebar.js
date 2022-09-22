@@ -6,7 +6,7 @@ import React from 'react';
 import { Dropdown } from 'react-bootstrap';
 /**
  * Creates sidebar with filters to search for recipes
- * @returns 
+ * @returns Sidebar for filtering recipes
  */
 function Filters() {
     return (
