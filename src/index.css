@@ -9,6 +9,7 @@
 
 .sidebar {
     background: #E0ECFD;
+    border-radius: 15px;
 }
 .links {
     float: left;
