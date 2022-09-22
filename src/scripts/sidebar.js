@@ -3,19 +3,55 @@ import Form from 'react-bootstrap/Form';
 //import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import React from 'react';
-import { Dropdown } from 'react-bootstrap';
 /**
  * Creates sidebar with filters to search for recipes
  * @returns Sidebar for filtering recipes
  */
 function Filters() {
+
+    /**
+     * https://stackoverflow.com/questions/63182107/how-can-i-get-a-value-from-a-react-bootstrap-form-on-submit
+     * @param {*} e 
+     */
+    const onFormSubmit = e => {
+        e.preventDefault()
+        const formData = new FormData(e.target),
+        formDataObj = Object.fromEntries(formData.entries())
+        console.log(formDataObj)
+
+
+        // From https://rapidapi.com/edamam/api/recipe-search-and-diet
+        const axios = require("axios");
+
+        const options = {
+            method: 'GET',
+            url: 'https://edamam-recipe-search.p.rapidapi.com/search',
+            params: {q: 'chicken tomato'}, //input ingredients here
+            headers: {
+                'X-RapidAPI-Key': '1c01bfdfbcmsh477ce97a09c9667p14eef1jsne64d4135f9a5',
+                'X-RapidAPI-Host': 'edamam-recipe-search.p.rapidapi.com'
+            }
+        };
+
+        axios.request(options).then(function (response) {
+            /**
+             * Fetch ingredients of first recipe found using results
+             */
+            var ingredients = response.data.hits[1].recipe.ingredients;
+            for (let i = 0; i < ingredients.length; i++) {
+                console.log(ingredients[i]);
+            }
+        }).catch(function (error) {
+            console.error(error);
+        });
+    }
     return (
         <SidebarMenu className="w-25 mx-4 sidebar">
             <SidebarMenu.Header>
                 <p className="mx-4 my-4">Select which ingredients you have, then press search to get recipes you can make!</p>
             </SidebarMenu.Header>
             <SidebarMenu.Body>
-                <Form className="mx-4">
+                <Form className="mx-4" onSubmit={onFormSubmit}>
                     <Row>
                         <Form.Group controlId="potein">
                             <Form.Label>Protein</Form.Label>
