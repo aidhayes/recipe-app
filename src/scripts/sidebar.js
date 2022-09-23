@@ -48,20 +48,18 @@ function Filters() {
     return (
         <SidebarMenu className="w-25 mx-4 sidebar">
             <SidebarMenu.Header>
-                <p className="mx-4 my-4">Select which ingredients you have, then press search to get recipes you can make!</p>
+                <p className="mx-4 my-4 pt-3">Select which ingredients you have, then press search to get recipes you can make!</p>
             </SidebarMenu.Header>
             <SidebarMenu.Body>
-                <Form className="mx-4" onSubmit={onFormSubmit}>
+                <Form className="mx-4 filters" onSubmit={onFormSubmit}>
                     <Row>
-                        <Form.Group controlId="potein">
+                        <Form.Group controlId="protein">
                             <Form.Label>Protein</Form.Label>
-                                    
                                 <Form.Check type="checkbox" label="Chicken"/>
                                 <Form.Check type="checkbox" label="Beef"/>
                                 <Form.Check type="checkbox" label="Pork"/>
                                 <Form.Check type="checkbox" label="Egg"/>
-                                <Form.Check type="checkbox" label="Veal"/>
-                                    
+                                <Form.Check type="checkbox" label="Veal"/>    
                             </Form.Group>
                     </Row>
                     <Row>
