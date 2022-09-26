@@ -27,7 +27,7 @@ function Filters() {
         const options = {
             method: 'GET',
             url: 'https://edamam-recipe-search.p.rapidapi.com/search',
-            params: {q: 'chicken tomato'}, //input ingredients here
+            params: {q: 'chicken tomato garlic mozzarella'}, //input ingredients here {these are filler ingredients}
             headers: {
                 'X-RapidAPI-Key': '1c01bfdfbcmsh477ce97a09c9667p14eef1jsne64d4135f9a5',
                 'X-RapidAPI-Host': 'edamam-recipe-search.p.rapidapi.com'
@@ -56,62 +56,62 @@ function Filters() {
                     <Row>
                         <Form.Group controlId="protein">
                             <Form.Label>Protein</Form.Label>
-                                <Form.Check type="checkbox" label="Chicken"/>
-                                <Form.Check type="checkbox" label="Beef"/>
-                                <Form.Check type="checkbox" label="Pork"/>
-                                <Form.Check type="checkbox" label="Egg"/>
-                                <Form.Check type="checkbox" label="Veal"/>    
+                                <Form.Check type="checkbox" name="Chicken" label="Chicken"/>
+                                <Form.Check type="checkbox" name="Beef" label="Beef"/>
+                                <Form.Check type="checkbox" name="Pork" label="Pork"/>
+                                <Form.Check type="checkbox" name="Egg" label="Egg"/>
+                                <Form.Check type="checkbox" name="Veal" label="Veal"/>    
                             </Form.Group>
                     </Row>
                     <Row>
                         <Form.Group controlId="vegetables">
                             <Form.Label>Vegetables</Form.Label>
-                                <Form.Check type="checkbox" label="Carrots"/>
-                                <Form.Check type="checkbox" label="Red Pepper"/>
-                                <Form.Check type="checkbox" label="Green Pepper"/>
-                                <Form.Check type="checkbox" label="Yellow Pepper"/>
-                                <Form.Check type="checkbox" label="Red Onions"/>
-                                <Form.Check type="checkbox" label="Yellow Onions"/>
-                                <Form.Check type="checkbox" label="Green Onions"/>
-                                <Form.Check type="checkbox" label="Tomatoes"/>
-                                <Form.Check type="checkbox" label="Broccoli"/>
-                                <Form.Check type="checkbox" label="Cucumbers"/>
-                                <Form.Check type="checkbox" label="Salad Mix"/>
-                                <Form.Check type="checkbox" label="Potatos"/>
-                                <Form.Check type="checkbox" label="Kale"/>
+                                <Form.Check type="checkbox" name="Carrots" label="Carrots"/>
+                                <Form.Check type="checkbox" name="Red Pepper" label="Red Pepper"/>
+                                <Form.Check type="checkbox" name="Green Pepper" label="Green Pepper"/>
+                                <Form.Check type="checkbox" name="Yellow Pepper" label="Yellow Pepper"/>
+                                <Form.Check type="checkbox" name="Red Onions" label="Red Onions"/>
+                                <Form.Check type="checkbox" name="Yellow Onions" label="Yellow Onions"/>
+                                <Form.Check type="checkbox" name="Green Onions" label="Green Onions"/>
+                                <Form.Check type="checkbox" name="Tomatoes" label="Tomatoes"/>
+                                <Form.Check type="checkbox" name="Broccoli" label="Broccoli"/>
+                                <Form.Check type="checkbox" name="Cucumbers" label="Cucumbers"/>
+                                <Form.Check type="checkbox" name="Salad Mix" label="Salad Mix"/>
+                                <Form.Check type="checkbox" name="Potatos" label="Potatos"/>
+                                <Form.Check type="checkbox" name="Kale" label="Kale"/>
                         </Form.Group>
                     </Row>
                     <Row>
                         <Form.Group controlId='spices'>
                             <Form.Label>Spices</Form.Label>
-                                <Form.Check type="checkbox" label="Cinnamon"/>
-                                <Form.Check type="checkbox" label="Ginger"/>
-                                <Form.Check type="checkbox" label="Black Pepper"/>
-                                <Form.Check type="checkbox" label="Salt"/>
-                                <Form.Check type="checkbox" label="Paprika"/>
-                                <Form.Check type="checkbox" label="Cardamom"/>
-                                <Form.Check type="checkbox" label="Turmeric Powder"/>
-                                <Form.Check type="checkbox" label="Cayenne Pepper"/>
-                                <Form.Check type="checkbox" label="Oregano"/>
-                                <Form.Check type="checkbox" label="Rosemary"/>
-                                <Form.Check type="checkbox" label="Chili Powder"/>
-                                <Form.Check type="checkbox" label="Red Pepper Flacks"/>
-                                <Form.Check type="checkbox" label="Basil"/>
-                                <Form.Check type="checkbox" label="Bay leaves"/>
-                                <Form.Check type="checkbox" label="Garlic"/>
-                                <Form.Check type="checkbox" label="Garlic Powder"/>
-                                <Form.Check type="checkbox" label="Thyme"/>
+                                <Form.Check type="checkbox" name="Cannamon" label="Cinnamon"/>
+                                <Form.Check type="checkbox" name="Ginger" label="Ginger"/>
+                                <Form.Check type="checkbox" name="Black Pepper" label="Black Pepper"/>
+                                <Form.Check type="checkbox" name="Salt" label="Salt"/>
+                                <Form.Check type="checkbox" name="Paprika" label="Paprika"/>
+                                <Form.Check type="checkbox" name="Cardamon" label="Cardamom"/>
+                                <Form.Check type="checkbox" name="Turmeric Powder" label="Turmeric Powder"/>
+                                <Form.Check type="checkbox" name="Cayenne Pepper" label="Cayenne Pepper"/>
+                                <Form.Check type="checkbox" name="Oregano" label="Oregano"/>
+                                <Form.Check type="checkbox" name="Rosemary" label="Rosemary"/>
+                                <Form.Check type="checkbox" name="Chili Powder" label="Chili Powder"/>
+                                <Form.Check type="checkbox" name="Red Pepper Flakes" label="Red Pepper Flakes"/>
+                                <Form.Check type="checkbox" name="Basil" label="Basil"/>
+                                <Form.Check type="checkbox" name="Bay Leaves" label="Bay Leaves"/>
+                                <Form.Check type="checkbox" name="Garlic" label="Garlic"/>
+                                <Form.Check type="checkbox" name="Garlic Powder" label="Garlic Powder"/>
+                                <Form.Check type="checkbox" name="Thyme" label="Thyme"/>
                         </Form.Group>
                     </Row>
                     <Row>
                         <Form.Group controlId='seafood'>
                             <Form.Label>Sea Food</Form.Label>
-                                <Form.Check type="checkbox" label="Shrimp"/>
-                                <Form.Check type="checkbox" label="Tuna"/>
-                                <Form.Check type="checkbox" label="Salmon"/>
-                                <Form.Check type="checkbox" label="Tilapia"/>
-                                <Form.Check type="checkbox" label="Crab"/>
-                                <Form.Check type="checkbox" label="Shrimp"/>
+                                <Form.Check type="checkbox" name="Shrimp" label="Shrimp"/>
+                                <Form.Check type="checkbox" name="Tuna" label="Tuna"/>
+                                <Form.Check type="checkbox" name="Salmon" label="Salmon"/>
+                                <Form.Check type="checkbox" name="Tilapia" label="Tilapia"/>
+                                <Form.Check type="checkbox" name="Crab" label="Crab"/>
+                                <Form.Check type="checkbox" name="Shrimp" label="Shrimp"/>
                         </Form.Group> 
                     </Row>
                     <Button variant="primary" type="submit">Submit</Button>
