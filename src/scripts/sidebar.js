@@ -2,6 +2,7 @@ import SidebarMenu from 'react-bootstrap-sidebar-menu';
 import Form from 'react-bootstrap/Form';
 //import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import Button from 'react-bootstrap/Button';
 import React from 'react';
 /**
  * Creates sidebar with filters to search for recipes
@@ -39,7 +40,7 @@ function Filters() {
              */
             var ingredients = response.data.hits[1].recipe.ingredients;
             for (let i = 0; i < ingredients.length; i++) {
-                console.log(ingredients[i]);
+                console.log(ingredients[i].text);
             }
         }).catch(function (error) {
             console.error(error);
@@ -113,6 +114,7 @@ function Filters() {
                                 <Form.Check type="checkbox" label="Shrimp"/>
                         </Form.Group> 
                     </Row>
+                    <Button variant="primary" type="submit">Submit</Button>
                 </Form>
             </SidebarMenu.Body>
         </SidebarMenu>
