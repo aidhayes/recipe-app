@@ -1,10 +1,30 @@
 .title {
-    text-align: center;
+    text-align: left;
     color: coral;
 }
 
 .header {
     margin: 10px;
+}
+
+.logo {
+    display: flex;
+    float: left;
+    margin-left: 10px;
+    height: 50px;
+}
+
+.websiteLogo {
+    display:flex;
+    float: left;
+    margin-right: left;
+}
+
+.addRecipe {
+    display:flex;
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
 }
 
 .sidebar {
@@ -27,5 +47,10 @@
 .filters {
     height: 500px;
     overflow-y: scroll;
+}
+
+.filterDiv {
+    display:block;
+    margin-top: 30px;
 }
 
