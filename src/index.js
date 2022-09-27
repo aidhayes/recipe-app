@@ -3,10 +3,7 @@ import ReactDOM from 'react-dom/client';
 import 'bootstrap/dist/css/bootstrap.css';
 import './index.css'
 import websiteLogo from './logo.png';
-//import Navigator from './scripts/navbar.js';
-//import ProfileDropdown from './scripts/dropdown';
-//import Container from 'react-bootstrap/Container';
-//import Image from 'react-bootstrap/Image';
+import Recipe from './food';
 import Filters from './scripts/sidebar.js';
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -18,9 +15,13 @@ root.render(
         
         <button className="addRecipe" onClick={null}>Upload Recipe</button>
         <br></br>
+        <div className="container">
         <div className="filterDiv">
             <Filters/>
         </div>
-        
+        <div className="recipes">
+            <Recipe/>
+        </div>
+        </div>
     </>
 );

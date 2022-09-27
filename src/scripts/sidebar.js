@@ -47,7 +47,7 @@ function Filters() {
         });
     }
     return (
-        <SidebarMenu className="w-25 mx-4 sidebar">
+        <SidebarMenu className="w-50 mx-4 sidebar">
             <SidebarMenu.Header>
                 <p className="mx-4 my-4 pt-3">Select which ingredients you have, then press search to get recipes you can make!</p>
             </SidebarMenu.Header>
