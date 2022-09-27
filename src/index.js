@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client'; 
 import 'bootstrap/dist/css/bootstrap.css';
 import './index.css'
-import websiteLogo from '/Users/matthewm/Desktop/recipe-app/src/logo.png';
+import websiteLogo from './logo.png';
 //import Navigator from './scripts/navbar.js';
 //import ProfileDropdown from './scripts/dropdown';
 //import Container from 'react-bootstrap/Container';
