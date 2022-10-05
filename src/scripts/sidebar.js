@@ -38,10 +38,14 @@ function Filters() {
             /**
              * Fetch ingredients of first recipe found using results
              */
-            var ingredients = response.data.hits[1].recipe.ingredients;
-            for (let i = 0; i < ingredients.length; i++) {
+            //var ingredients = response.data.hits[1].recipe.ingredients;
+            /** 
+             * for (let i = 0; i < ingredients.length; i++) {
                 console.log(ingredients[i].text);
             }
+            */
+           console.log(response.data);
+            
         }).catch(function (error) {
             console.error(error);
         });
