@@ -4,11 +4,13 @@ import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
 import React from 'react';
+
+
 /**
  * Creates sidebar with filters to search for recipes
  * @returns Sidebar for filtering recipes
  */
-function Filters() {
+export default function Filters() {
 
     /**
      * https://stackoverflow.com/questions/63182107/how-can-i-get-a-value-from-a-react-bootstrap-form-on-submit
@@ -17,17 +19,20 @@ function Filters() {
     const onFormSubmit = e => {
         e.preventDefault()
         const formData = new FormData(e.target),
-        formDataObj = Object.fromEntries(formData.entries())
-        console.log(formDataObj)
+        formDataObj = Object.fromEntries(formData.entries()),
+        // Store form input into array
+        ingredientArray = Object.keys(formDataObj)
 
+        var ingredients = ingredientArray.toString()
 
+        console.log(ingredients)
         // From https://rapidapi.com/edamam/api/recipe-search-and-diet
         const axios = require("axios");
 
         const options = {
             method: 'GET',
             url: 'https://edamam-recipe-search.p.rapidapi.com/search',
-            params: {q: 'chicken tomato garlic mozzarella'}, //input ingredients here {these are filler ingredients}
+            params: {q: ingredients}, //input ingredients here {these are filler ingredients}
             headers: {
                 'X-RapidAPI-Key': '1c01bfdfbcmsh477ce97a09c9667p14eef1jsne64d4135f9a5',
                 'X-RapidAPI-Host': 'edamam-recipe-search.p.rapidapi.com'
@@ -125,4 +130,3 @@ function Filters() {
     );
 }
 
-export default Filters;
