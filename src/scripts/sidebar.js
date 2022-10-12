@@ -6,45 +6,7 @@ import Button from 'react-bootstrap/Button';
 import React from 'react';
 import Image from 'react-bootstrap/Image'
 import Accordion from 'react-bootstrap/Accordion';
-
-
-function GetRecipes(ingredients) {
-    // From https://rapidapi.com/edamam/api/recipe-search-and-diet
-    const axios = require("axios");
-
-    const options = {
-        method: 'GET',
-        url: 'https://edamam-recipe-search.p.rapidapi.com/search',
-        params: {q: ingredients}, //input ingredients here {these are filler ingredients}
-        headers: {
-            'X-RapidAPI-Key': '1c01bfdfbcmsh477ce97a09c9667p14eef1jsne64d4135f9a5',
-            'X-RapidAPI-Host': 'edamam-recipe-search.p.rapidapi.com'
-        }
-    };
-
-    axios.request(options).then(function (response) {
-        /**
-         * Fetch ingredients of first recipe found using results
-         */
-        //var ingredients = response.data.hits[1].recipe.ingredients;
-        /** 
-         * for (let i = 0; i < ingredients.length; i++) {
-            console.log(ingredients[i].text);
-        }
-        */
-       console.log(response.data);
-       console.log(response.data.hits[1].recipe.image)
-       var url = response.data.hits[1].recipe.url;
-       var imgurl = response.data.hits[1].recipe.image;
-       return (
-        <Image src={imgurl} alt='Recipe'/>
-       )
-       
-    }).catch(function (error) {
-        console.error(error);
-    });
-
-}
+import { useState } from 'react';
 
 /**
  * Creates sidebar with filters to search for recipes
@@ -52,11 +14,13 @@ function GetRecipes(ingredients) {
  */
 export default function Filters() {
 
+    const [imgUrl, setImgUrl] = useState("");
+
     /**
      * https://stackoverflow.com/questions/63182107/how-can-i-get-a-value-from-a-react-bootstrap-form-on-submit
      * @param {*} e 
      */
-    const onFormSubmit = e => {
+    let onFormSubmit = e => {
         e.preventDefault()
         const formData = new FormData(e.target),
         formDataObj = Object.fromEntries(formData.entries()),
@@ -66,7 +30,29 @@ export default function Filters() {
         var ingredients = ingredientArray.toString()
 
         console.log(ingredients)
-        GetRecipes(ingredients)
+
+        const axios = require("axios");
+
+        const options = {
+            method: 'GET',
+            url: 'https://edamam-recipe-search.p.rapidapi.com/search',
+            params: {q: ingredients}, //input ingredients here {these are filler ingredients}
+            headers: {
+                'X-RapidAPI-Key': '1c01bfdfbcmsh477ce97a09c9667p14eef1jsne64d4135f9a5',
+                'X-RapidAPI-Host': 'edamam-recipe-search.p.rapidapi.com'
+            }
+        };
+
+        axios.request(options).then(function (response) {
+            console.log(response.data);
+            //var url = response.data.hits[1].recipe.url;
+            var imgurl = response.data.hits[1].recipe.image;
+            //console.log(imgurl);
+            setImgUrl(imgurl);
+            //console.log(url);
+         }).catch(function (error) {
+             console.error(error);
+         });
     }
 
     return (
@@ -163,7 +149,7 @@ export default function Filters() {
         </SidebarMenu>
         <Container>
             <Row>
-                
+                <Image src={imgUrl}/>
             </Row>
         </Container>
         </>
