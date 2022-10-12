@@ -31,7 +31,9 @@ function getRecipes(ingredients) {
         }
         */
        console.log(response.data);
-       return response.data
+       var url = response.data.hits[1].recipe.url;
+       
+       window.alert(url)
     }).catch(function (error) {
         console.error(error);
     });
