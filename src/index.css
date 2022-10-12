@@ -48,7 +48,7 @@
 }
 
 .filters {
-    height: 500px;
+    height: 350px;
     overflow-y: scroll;
 }
 
@@ -61,6 +61,11 @@
     font-size: xx-large;
 }
 
-.navbar {
+.accordion button {
+    background-color: #E0ECFD;
+    border: none !important;
+}
+
+.acordion body {
     background-color: #E0ECFD;
 }
