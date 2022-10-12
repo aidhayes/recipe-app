@@ -1,15 +1,12 @@
 import SidebarMenu from 'react-bootstrap-sidebar-menu';
 import Form from 'react-bootstrap/Form';
 import Container from 'react-bootstrap/Container';
-import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
 import React from 'react';
 import Image from 'react-bootstrap/Image'
-import Collapse from 'react-bootstrap/Collapse';
 import Accordion from 'react-bootstrap/Accordion';
-import { useState } from 'react';
-import { AccordionButton } from 'react-bootstrap';
+
 
 function GetRecipes(ingredients) {
     // From https://rapidapi.com/edamam/api/recipe-search-and-diet
