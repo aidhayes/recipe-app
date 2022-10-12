@@ -1,12 +1,13 @@
 import SidebarMenu from 'react-bootstrap-sidebar-menu';
 import Form from 'react-bootstrap/Form';
-//import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container';
+import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
 import React from 'react';
+import Image from 'react-bootstrap/Image'
 
-
-function getRecipes(ingredients) {
+function GetRecipes(ingredients) {
     // From https://rapidapi.com/edamam/api/recipe-search-and-diet
     const axios = require("axios");
 
@@ -31,9 +32,13 @@ function getRecipes(ingredients) {
         }
         */
        console.log(response.data);
+       console.log(response.data.hits[1].recipe.image)
        var url = response.data.hits[1].recipe.url;
+       var imgurl = response.data.hits[1].recipe.image;
+       return (
+        <Image src={imgurl} alt='Recipe'/>
+       )
        
-       window.alert(url)
     }).catch(function (error) {
         console.error(error);
     });
@@ -60,9 +65,10 @@ export default function Filters() {
         var ingredients = ingredientArray.toString()
 
         console.log(ingredients)
-        getRecipes(ingredients)
+        GetRecipes(ingredients)
     }
     return (
+        <>
         <SidebarMenu className="mx-4 sidebar">
             <SidebarMenu.Header>
                 <p className="mx-4 my-4 pt-3">Select which ingredients you have, then press search to get recipes you can make!</p>
@@ -134,6 +140,12 @@ export default function Filters() {
                 </Form>
             </SidebarMenu.Body>
         </SidebarMenu>
+        <Container>
+            <Row>
+                
+            </Row>
+        </Container>
+        </>
     );
 }
 
