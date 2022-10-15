@@ -12,7 +12,7 @@ import Col from 'react-bootstrap/Col';
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <>
-        <Container fluid>
+        <Container fluid className="wave">
             <Row>
                 <Navigator/>
             </Row>
