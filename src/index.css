@@ -5,6 +5,7 @@
 
 .header {
     margin: 10px;
+    
 }
 
 .logo {
@@ -32,7 +33,7 @@
 }
 
 .sidebar {
-    background: #E0ECFD;
+    background: #97f142;
 }
 .links {
     float: left;
