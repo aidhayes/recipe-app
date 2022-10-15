@@ -68,4 +68,6 @@
 
 .acordion body {
     background-color: #E0ECFD;
+    background: linear-gradient(45deg, #FF2CAA 0%, #ffff01 100%);
 }
+
