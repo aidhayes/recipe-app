@@ -16,7 +16,7 @@
     "react-bootstrap-sidebar-menu": "^2.0.3",
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
-    "react-scripts": "^2.1.3",
+    "react-scripts": "^2.1.8",
     "save-dev": "^0.0.1-security",
     "web-vitals": "^2.1.4"
   },
