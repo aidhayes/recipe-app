@@ -73,7 +73,7 @@
 
 body {
     background-image: url("maarten-van-den-heuvel-EzH46XCDQRY-unsplash.jpg");
-    background-size: cover;
-    image-rendering: optimizeQuality;
+    background-repeat: no-repeat;
+    background-size: 1730px 1000px;
 
 }
