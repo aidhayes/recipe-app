@@ -1,11 +1,16 @@
 .title {
     text-align: left;
-    color: coral;
 }
 
 .header {
     margin: 10px;
     
+}
+.welcome{
+    color: white;
+    font-family:"Futura", Times, serif;
+    font-weight: 700;
+    font-size: 70px;
 }
 
 .logo {
@@ -33,7 +38,8 @@
 }
 
 .sidebar {
-    background: #97f142;
+    background-color: white;
+    border-radius: 20px;
 }
 .links {
     float: left;
@@ -45,7 +51,7 @@
 }
 
 .container {
-    display: flex;
+    display: flex;    
 }
 
 .filters {
@@ -59,21 +65,43 @@
 }
 
 .brand {
-    font-size: xx-large;
+    font-size: 35px;
+    color: #FF1E00;
+    font-weight: 500;
+    font-family:"Brush Script MT", Times, serif;
 }
 
 .accordion button {
-    background-color: #E0ECFD;
+    background-color: white;
     border: none !important;
 }
 
 .acordion body {
-    background-color: #E0ECFD;
+    background-color: white;
+}
+.submit{
+    margin-top: 10px;
+    height:36px;
+    width:90px;
+    border-radius:18px;
 }
 
-body {
+body{
+    
     background-image: url("maarten-van-den-heuvel-EzH46XCDQRY-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
 
 }
+.wave{
+    background-color: #59CE8F80;
+    height: 100%;
+    width: 100%;
+}
+
+.navbar{
+    background-color: white;
+    border-bottom: 2px solid black;
+}
+    
+

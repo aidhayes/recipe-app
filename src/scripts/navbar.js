@@ -10,7 +10,7 @@ import '../index.css';
 function Navigator() {
     return (
         <Container className="justify-content-left navbar">
-            <Navbar className="navbar">
+            <Navbar>
                 <Container>
                     <Navbar.Brand className="brand">
                         <img

@@ -259,12 +259,12 @@ export default function Filters() {
                             </Accordion.Body>
                         </Accordion.Item>
                     </Accordion>
-                    <Button variant="primary" type="submit">Submit</Button>
+                    <Button variant="primary" type="submit" className="submit">Submit</Button>
                 </Form>
             </SidebarMenu.Body>
         </SidebarMenu>
         <Container>
-            <Row>
+            <Row className="Food-gallery">
 				<a href={imgLink}>
                   <Image src={imgUrl}/>
 				</a>
