@@ -9,7 +9,7 @@ import '../index.css';
  */
 function Navigator() {
     return (
-        <Container className="justify-content-left navbar">
+        <Container className="justify-content-left navbar" id="navbar-bottom">
             <Navbar className="navbar">
                 <Container>
                     <Navbar.Brand className="brand">
