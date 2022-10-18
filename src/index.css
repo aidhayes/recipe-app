@@ -15,6 +15,11 @@
     height: 50px;
 }
 
+.navbar{
+    background-color: white;
+    border-bottom: 2px solid black;
+}
+
 .recipes {
     float: left;
 }
