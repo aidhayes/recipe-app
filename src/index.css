@@ -20,6 +20,13 @@
     border-bottom: 2px solid black;
 }
 
+.welcome{
+    color: white;
+    font-family:"Futura", Times, serif;
+    font-weight: 700;
+    font-size: 70px;
+}
+
 .recipes {
     float: left;
 }
@@ -65,6 +72,9 @@
 
 .brand {
     font-size: xx-large;
+    color: #FF1E00;
+    font-weight: 500;
+    font-family:"Brush Script MT", Times, serif;
 }
 
 .accordion button {

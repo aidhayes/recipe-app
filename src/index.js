@@ -24,7 +24,7 @@ root.render(
                 <Col xs={6} sm={6} md={6} lg={8} xl={8}>
                     <Container>
                         <Row>
-                            <Col>
+                            <Col className="welcome">
                                 Welcome to Cooking Daddy, a site dedicated to helping those looking for a quick meal find recipes.
                             </Col>
                         </Row>
