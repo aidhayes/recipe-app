@@ -159,13 +159,14 @@ export default function Filters() {
                                 <Row>
                                 <Form.Group controlId="protein">
                                         <Form.Check type="checkbox" name="Chicken" label="Chicken"/>
-                                        <Form.Check type="checkbox" name="Ground Beef" label="Ground Beef"/>
                                         <Form.Check type="checkbox" name="Beef Steak" label="Beef Steak"/>
-                                        <Form.Check type="checkbox" name="Pork" label="Pork"/>
+                                        <Form.Check type="checkbox" name="Bison" label="Bison"/>
                                         <Form.Check type="checkbox" name="Egg" label="Egg"/>
+                                        <Form.Check type="checkbox" name="Ground Beef" label="Ground Beef"/>                                       
+                                        <Form.Check type="checkbox" name="Pork" label="Pork"/>                                       
                                         <Form.Check type="checkbox" name="Veal" label="Veal"/>    
                                         <Form.Check type="checkbox" name="Venison" label="Venison"/>
-                                        <Form.Check type="checkbox" name="Bison" label="Bison"/>
+                                        
                                 </Form.Group>
                                 </Row>
                             </Accordion.Body>
@@ -175,16 +176,16 @@ export default function Filters() {
                             <Accordion.Body>
                                 <Row>
                                     <Form.Group controlId='seafood'>
-                                        <Form.Check type="checkbox" name="Shrimp" label="Shrimp"/>
-                                        <Form.Check type="checkbox" name="Tuna" label="Tuna"/>
-                                        <Form.Check type="checkbox" name="Salmon" label="Salmon"/>
-                                        <Form.Check type="checkbox" name="Tilapia" label="Tilapia"/>
+                                        <Form.Check type="checkbox" name="Catfish" label="Catfish"/>
+                                        <Form.Check type="checkbox" name="Cod" label="Cod"/>
                                         <Form.Check type="checkbox" name="Crab" label="Crab"/>
                                         <Form.Check type="checkbox" name="Lobster" label="Lobster"/>
-                                        <Form.Check type="checkbox" name="Trout" label="Trout"/>
                                         <Form.Check type="checkbox" name="Mackerel" label="Mackerel"/>
-                                        <Form.Check type="checkbox" name="Cod" label="Cod"/>
-                                        <Form.Check type="checkbox" name="Catfish" label="Catfish"/>
+                                        <Form.Check type="checkbox" name="Shrimp" label="Shrimp"/>
+                                        <Form.Check type="checkbox" name="Salmon" label="Salmon"/>
+                                        <Form.Check type="checkbox" name="Tilapia" label="Tilapia"/>
+                                        <Form.Check type="checkbox" name="Trout" label="Trout"/>
+                                        <Form.Check type="checkbox" name="Tuna" label="Tuna"/>                           
                                     </Form.Group>
                                 </Row>
                             </Accordion.Body>
@@ -194,19 +195,44 @@ export default function Filters() {
                             <Accordion.Body>
                                 <Row>
                                     <Form.Group controlId="vegetables">
-                                                <Form.Check type="checkbox" name="Carrots" label="Carrots"/>
-                                                <Form.Check type="checkbox" name="Red Pepper" label="Red Pepper"/>
-                                                <Form.Check type="checkbox" name="Green Pepper" label="Green Pepper"/>
-                                                <Form.Check type="checkbox" name="Yellow Pepper" label="Yellow Pepper"/>
-                                                <Form.Check type="checkbox" name="Red Onions" label="Red Onions"/>
-                                                <Form.Check type="checkbox" name="Yellow Onions" label="Yellow Onions"/>
-                                                <Form.Check type="checkbox" name="Green Onions" label="Green Onions"/>
-                                                <Form.Check type="checkbox" name="Tomatoes" label="Tomatoes"/>
-                                                <Form.Check type="checkbox" name="Broccoli" label="Broccoli"/>
-                                                <Form.Check type="checkbox" name="Cucumbers" label="Cucumbers"/>
-                                                <Form.Check type="checkbox" name="Salad Mix" label="Salad Mix"/>
-                                                <Form.Check type="checkbox" name="Potatoes" label="Potatoes"/>
-                                                <Form.Check type="checkbox" name="Kale" label="Kale"/>
+                                        <Form.Check type="checkbox" name="Artichokes" label="Artichokes"/>
+                                        <Form.Check type="checkbox" name="Asparagus" label="Asparagus"/>
+                                        <Form.Check type="checkbox" name="Baked Beans" label="Baked Beans"/>
+                                        <Form.Check type="checkbox" name="Beetroot" label="Beetroot"/>
+                                        <Form.Check type="checkbox" name="Black Beans" label="Black Beans"/>
+                                        <Form.Check type="checkbox" name="Broccoli" label="Broccoli"/>
+                                        <Form.Check type="checkbox" name="Brussel Sprouts" label="Brussel Sprouts"/>
+                                        <Form.Check type="checkbox" name="Carrots" label="Carrots"/>
+                                        <Form.Check type="checkbox" name="Celery" label="Celery"/>
+                                        <Form.Check type="checkbox" name="Chilli Peppers" label="Chilli Peppers"/>
+                                        <Form.Check type="checkbox" name="Corn" label="Corn"/>
+                                        <Form.Check type="checkbox" name="Cucumbers" label="Cucumbers"/>
+                                        <Form.Check type="checkbox" name="Eggplant" label="Eggplant"/>
+                                        <Form.Check type="checkbox" name="French Beans" label="French Beans"/>
+                                        <Form.Check type="checkbox" name="Green Beans" label="Green Beans"/>
+                                        <Form.Check type="checkbox" name="Green Onions" label="Green Onions"/>
+                                        <Form.Check type="checkbox" name="Green Pepper" label="Green Pepper"/>
+                                        <Form.Check type="checkbox" name="Kale" label="Kale"/>
+                                        <Form.Check type="checkbox" name="Leeks" label="Leeks"/>
+                                        <Form.Check type="checkbox" name="Lettuce" label="Lettuce"/>
+                                        <Form.Check type="checkbox" name="Mushrooms" label="Mushrooms"/>
+                                        <Form.Check type="checkbox" name="Pinto Beans" label="Pinto Beans"/>
+                                        <Form.Check type="checkbox" name="Potatoes" label="Potatoes"/>
+                                        <Form.Check type="checkbox" name="Radish" label="Radish"/>                                        
+                                        <Form.Check type="checkbox" name="Red Pepper" label="Red Pepper"/>
+                                        <Form.Check type="checkbox" name="Red Onions" label="Red Onions"/>
+                                        <Form.Check type="checkbox" name="Rhubarb" label="Rhubarb"/>
+                                        <Form.Check type="checkbox" name="Salad Mix" label="Salad Mix"/>
+                                        <Form.Check type="checkbox" name="Shallots" label="Shallots"/>
+                                        <Form.Check type="checkbox" name="Spinach" label="Spinach"/>
+                                        <Form.Check type="checkbox" name="Spring Onions" label="Spring Onions"/>
+                                        <Form.Check type="checkbox" name="Sweet Corn" label="Sweet Corn"/>
+                                        <Form.Check type="checkbox" name="Tomatoes" label="Tomatoes"/>
+                                        <Form.Check type="checkbox" name="Turnips" label="Turnips"/>
+                                        <Form.Check type="checkbox" name="Yams" label="Yams"/>
+                                        <Form.Check type="checkbox" name="Yellow Pepper" label="Yellow Pepper"/>                            
+                                        <Form.Check type="checkbox" name="Yellow Onions" label="Yellow Onions"/>
+                                                                                                                                                                                                                                                                       
                                     </Form.Group>
                                 </Row>
                             </Accordion.Body>
@@ -256,6 +282,72 @@ export default function Filters() {
                                         <Form.Check type="checkbox" name="Turmeric Powder" label="Turmeric Powder"/>                                                                                                                       
                                     </Form.Group>
                                 </Row>      
+                            </Accordion.Body>
+                        </Accordion.Item>
+                        <Accordion.Item eventKey="4">
+                            <Accordion.Header>Liquid Ingredients</Accordion.Header>
+                            <Accordion.Body>
+                                <Row>
+                                    <Form.Group controlId='liquids'>
+                                    <Form.Label>Liquid Ingredients</Form.Label>
+                                        <Form.Check type="checkbox" name="Apple Cidar Vinegar" label="Apple Cidar Vinegar"/>
+                                        <Form.Check type="checkbox" name="Balsamic Vinegar" label="Balsamic Vinegar"/>
+                                        <Form.Check type="checkbox" name="Barbecue Sauce" label="Barbecue Sauce"/>
+                                        <Form.Check type="checkbox" name="Canola Oil" label="Canola Oil"/>
+                                        <Form.Check type="checkbox" name="Chicken Broth" label="Chicken Broth"/>
+                                        <Form.Check type="checkbox" name="Corn Syrup" label="Corn Syrup"/>
+                                        <Form.Check type="checkbox" name="Cream of Mushroom" label="Cream of Mushroom"/>
+                                        <Form.Check type="checkbox" name="Beef Broth" label="Beef Broth"/>
+                                        <Form.Check type="checkbox" name="Buttermilk" label="Buttermilk"/>
+                                        <Form.Check type="checkbox" name="Half and Half" label="Half and Half"/>
+                                        <Form.Check type="checkbox" name="Heavy Cream" label="Heavy Cream"/>
+                                        <Form.Check type="checkbox" name="Honey" label="Honey"/>
+                                        <Form.Check type="checkbox" name="Hot Sauce" label="Hot Sauce"/>
+                                        <Form.Check type="checkbox" name="Lemon Juice" label="Lemon Juice"/>
+                                        <Form.Check type="checkbox" name="Malt Vinegar" label="Malt Vinegar"/>
+                                        <Form.Check type="checkbox" name="Milk" label="Milk"/>
+                                        <Form.Check type="checkbox" name="Molasses" label="Molasses"/>
+                                        <Form.Check type="checkbox" name="Olive Oil" label="Olive Oil"/>
+                                        <Form.Check type="checkbox" name="Red Wine Vinegar" label="Red Wine Vinegar"/>
+                                        <Form.Check type="checkbox" name="Vanilla Extract" label="Vanilla Extract"/>
+                                        <Form.Check type="checkbox" name="Vegetable Oil" label="Vegetable Oil"/>
+                                        <Form.Check type="checkbox" name="Vinegar" label="Vinegar"/>
+                                        <Form.Check type="checkbox" name="Water" label="Water"/>
+                                        <Form.Check type="checkbox" name="White Whine Vinegar" label="White Wine Vinegar"/>                                                                                              
+                                    </Form.Group>
+                                </Row>
+                            </Accordion.Body>
+                        </Accordion.Item>
+                        <Accordion.Item eventKey="5">
+                            <Accordion.Header>Solid Ingredients</Accordion.Header>
+                            <Accordion.Body>
+                                <Row>
+                                    <Form.Group controlId='solidIngredients'>
+                                    <Form.Label>Solid Ingredients</Form.Label>
+                                        <Form.Check type="checkbox" name="Baking Powder" label="Baking Powder"/>
+                                        <Form.Check type="checkbox" name="Baking Soda" label="Baking Soda"/>
+                                        <Form.Check type="checkbox" name="Butter" label="Butter"/>
+                                        <Form.Check type="checkbox" name="Bran" label="Bran"/>
+                                        <Form.Check type="checkbox" name="Bread Crumbs" label="Bread Crumbs"/>
+                                        <Form.Check type="checkbox" name="Brown Sugar" label="Brown Sugar"/>
+                                        <Form.Check type="checkbox" name="Cream Cheese" label="Cream Cheese"/>
+                                        <Form.Check type="checkbox" name="Cheddar" label="Cheddar"/>
+                                        <Form.Check type="checkbox" name="Cocoa Powder" label="Cocoa Powder"/>
+                                        <Form.Check type="checkbox" name="Corn Meal" label="Corn Meal"/>
+                                        <Form.Check type="checkbox" name="Corn Starch" label="Corn Starch"/>
+                                        <Form.Check type="checkbox" name="Cream of Tartar" label="Cream of Tartar"/>                                       
+                                        <Form.Check type="checkbox" name="Flour" label="Flour"/>
+                                        <Form.Check type="checkbox" name="Granulated Sugar" label="Granulated Sugar"/>
+                                        <Form.Check type="checkbox" name="Lard" label="Lard"/>
+                                        <Form.Check type="checkbox" name="Margarine" label="Margarine"/>
+                                        <Form.Check type="checkbox" name="Oatmeal" label="Oatmeal"/>
+                                        <Form.Check type="checkbox" name="Powdered Sugar" label="Powdered Sugar"/>
+                                        <Form.Check type="checkbox" name="Shortening" label="Shortening"/>
+                                        <Form.Check type="checkbox" name="Sour Cream" label="Sour Cream"/>
+                                        <Form.Check type="checkbox" name="Sugar" label="Sugar"/>
+                                        <Form.Check type="checkbox" name="Yeast" label="Yeast"/>          
+                                    </Form.Group>
+                                </Row>
                             </Accordion.Body>
                         </Accordion.Item>
                     </Accordion>
@@ -310,4 +402,3 @@ export default function Filters() {
         </>
     );
 }
-
