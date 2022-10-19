@@ -16,7 +16,7 @@ root.render(
             <Row>
                 <Navigator/>
             </Row>
-            <hr/>
+            <br/>
             <Row>
                 <Col xs={6} sm={6} md={6} lg={4} xl={4}>
                     <Filters/>
