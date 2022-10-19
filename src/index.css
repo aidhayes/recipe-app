@@ -28,6 +28,7 @@ border-bottom:2px solid black;
     font-family:"Futura", Times, serif;
     font-weight: 700;
     font-size: 70px;
+    background-color: #97f14250;
 }
 
 .recipes {
@@ -48,8 +49,12 @@ border-bottom:2px solid black;
 }
 
 .sidebar {
-    background: #97f142;
+    background: #97f14250;
     border-radius: 10px;;
+    color: white;
+    font-family:"Futura", Times, serif;
+    font-weight: 700;
+    font-size: 20px;
 }
 .links {
     float: left;
@@ -65,7 +70,7 @@ border-bottom:2px solid black;
 }
 
 .filters {
-    height: 350px;
+    height: 400px;
     overflow-y: scroll;
 }
 
