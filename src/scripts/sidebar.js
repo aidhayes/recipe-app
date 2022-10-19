@@ -16,8 +16,11 @@ import { useState } from 'react';
  * @returns Sidebar for filtering recipes
  */
 export default function Filters() {
-    const [recipeArray, setRecipeArray] = useState(["","","","","","","","","",""]);
-
+    const [recipeArray, setRecipeArray] = useState(["",""]);
+    const [recipeArray1, setRecipeArray1] = useState(["",""]);
+    const [recipeArray2, setRecipeArray2] = useState(["",""]);
+    const [recipeArray3, setRecipeArray3] = useState(["",""]);
+    const [recipeArray4, setRecipeArray4] = useState(["","",]);
 
     /**
      * https://stackoverflow.com/questions/63182107/how-can-i-get-a-value-from-a-react-bootstrap-form-on-submit
@@ -58,12 +61,35 @@ export default function Filters() {
                 tempTxts[i] = response.data.hits[i].recipe.label;
                 tempUrls[i] = response.data.hits[i].recipe.url;
             }
+            /*
             var tempArray = [] // Temp recipe Array for storing images
             for(let i = 0; i < 10; i++){ // Fill recipe array with images
-                var recipe = <a href={tempUrls[i]}><Image src={tempImgs[i]}/><Button variant="primary" type="submit">Favorite</Button><h2>{tempTxts[i]}</h2></a>;
+                var recipe = <a href={tempUrls[i]}><Image src={tempImgs[i]}/><Button variant="primary" type="submit">Favorite</Button><h2>{tempTxts[i]}</h2></a>;           
                 tempArray.push(recipe);
             }
             setRecipeArray(tempArray); // Set the recipe array which is loaded on form submit
+            */
+            for(let i = 0; i < 5; i++){
+                var tempArray = []
+                 for(let j = 0; j < 2; j++){
+                    var recipe = <a href={tempUrls[(i*2) + j]}><Image src={tempImgs[(i*2) + j]} width ="150" height = "150"/><Button variant="primary" type="submit">Favorite</Button><p><small>{tempTxts[(i*2) + j].substring(0,30)}</small></p></a>;           
+                    tempArray.push(recipe);
+                 }
+                 switch(i){
+                    case 0:
+                            setRecipeArray(tempArray); break;
+                    case 1:
+                            setRecipeArray1(tempArray); break;
+                    case 2:
+                            setRecipeArray2(tempArray); break;
+                    case 3:
+                            setRecipeArray3(tempArray); break;
+                    case 4:
+                            setRecipeArray4(tempArray); break;
+                    default: break;
+                 }
+            }
+
 
          }).catch(function (error) {
              console.error(error);
@@ -283,13 +309,26 @@ export default function Filters() {
             </SidebarMenu.Body>
         </SidebarMenu>
         <Container>
+	    
 
-                <tbody>                   
-                    {
-                        recipeArray // Display recipe array
-                    } 
-                </tbody>
-                                                                                                                                                                                      
+                <Row gap={3}>
+                    <Col lg={2} sm={2} xs={2}>
+                    {recipeArray}
+                    </Col>
+                    <Col lg={2} sm={2} xs={2}>
+                    {recipeArray1}
+                    </Col>
+                    <Col lg={2} sm={2} xs={2}>
+                    {recipeArray2}
+                    </Col>
+                    <Col lg={2} sm={2} xs={2}>
+                    {recipeArray3}
+                    </Col>
+                    <Col lg={2} sm={2} xs={2}>
+                    {recipeArray4}
+                    </Col>
+                </Row>
+                                                                                                                                                                                  
         </Container>
         </>
     );
