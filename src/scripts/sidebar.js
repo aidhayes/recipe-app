@@ -307,7 +307,7 @@ export default function Filters() {
                                     </Accordion.Body>
                                 </Accordion.Item>
                             </Accordion>
-                            <Button variant="primary" type="submit" className="submit">Submit</Button>
+                            <Button variant="shadow-non" type="submit" className="submit">Submit</Button>
                         </Form>
                     </SidebarMenu.Body>
                 </SidebarMenu>
