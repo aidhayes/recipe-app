@@ -13,7 +13,7 @@ import Button from 'react-bootstrap/Button';
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <>
-        <Container fluid className="wave">
+        <Container fluid>
             <Row>
                 <Navigator/>
             </Row>
@@ -22,18 +22,8 @@ root.render(
                  <b>Welcome to Cooking Daddy</b>, a site dedicated to helping those looking for a quick meal find recipes.
                  <Button variant="shadow-non" type="login_button" className="login_button">Get Started</Button>
                 </Col>
-                <Row className ="background">
-                <Col xs={6} sm={6} md={6} lg={4} xl={4}>
-                    <Filters/>
-                </Col>
-                <Col xs={6} sm={6} md={6} lg={8} xl={8}>
-                    <Container>
-                        <Row>
-                          
-                        </Row>
-                    </Container>
-                </Col>
-            </Row>
+                <Filters/>
+                
         </Container>
 
     </>
