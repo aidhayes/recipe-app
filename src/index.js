@@ -18,18 +18,7 @@ root.render(
             </Row>
             <br/>
             <Row>
-                <Col xs={6} sm={6} md={6} lg={4} xl={4}>
                     <Filters/>
-                </Col>
-                <Col xs={6} sm={6} md={6} lg={8} xl={8}>
-                    <Container>
-                        <Row>
-                            <Col className="welcome">
-                                Welcome to Cooking Daddy, a site dedicated to helping those looking for a quick meal find recipes.
-                            </Col>
-                        </Row>
-                    </Container>
-                </Col>
             </Row>
         </Container>
 

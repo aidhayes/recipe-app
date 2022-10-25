@@ -100,7 +100,7 @@ export default function Filters() {
 
     return (
         <>
-        <Container fluid className="justify-content-md-center">
+        <Container fluid>
             <Row>
                 <SidebarMenu className="mx-4 sidebar" lg={6}>
                     <SidebarMenu.Header>
