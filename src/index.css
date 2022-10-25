@@ -24,17 +24,21 @@ border-bottom:2px solid black;
 }
 
 .welcome{
-    color: white;
+    margin-top:200px;
+    margin-left: 500px;
+    margin-right: 500px;
+    color: #665A48;
     font-family:"Futura", Times, serif;
-    font-weight: 700;
-    font-size: 70px;
-    background-color: #10565280;
+    font-weight: 500;
+    font-size: 40px;
+    background-color: rgb(237, 228, 224,.8);
     text-align: center;
+    padding: 50px;
 }
 
 #w{
     background-color: white;
-    margin-top:500px;
+
 }
 
 
@@ -52,11 +56,13 @@ border-bottom:2px solid black;
 }
 
 .sidebar {
+    margin-top:100px;
     line-height: 1.3;
     background-color: #9F877290;
     color: white;
+    border-radius: 10px;
     font-family:"Futura", Times, serif;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 20px;
     width: 90%;
     justify-content: center;
@@ -96,7 +102,10 @@ border-bottom:2px solid black;
 
 .submit{
     margin-top:10px;
+    background: #C8DBBE !important;
+    color: black;
 }
+button:focus {outline:0;}
 
 body {
     background-image: url("cucumber_peach_salad-2-700x1050.jpg");
@@ -107,7 +116,7 @@ body {
 
 .brand {
     font-size: xx-large;
-    color: #FF1E00;
+    color: #9F8772;
     font-weight: 500;
     font-family:"Brush Script MT", Times, serif;
 }
@@ -117,11 +126,31 @@ body {
     height: 550px;
     padding: 20px;
     margin-left: 20px;
-    background-color: #665A4880;
+
 }
 
 a {
     color: white;
     font-weight: bold;
     font-size: 20px;
+}
+
+.background{
+    margin-top:280px;
+    background-color: rgb(44, 39, 29,.98);
+
+}
+
+.login_button{
+    display: block;
+    background: #C8DBBE !important;
+    color:#665A48;
+    font-size: 20px;
+    font-weight: 500;
+    padding:10px;
+    justify-content: center;
+    margin:1em auto;
+    width:30%;
+    letter-spacing: 2px;
+
 }
