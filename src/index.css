@@ -28,7 +28,8 @@ border-bottom:2px solid black;
     font-family:"Futura", Times, serif;
     font-weight: 700;
     font-size: 70px;
-    background-color: #97f14250;
+    background-color: #10565280;
+    text-align: center;
 }
 
 .recipes {
@@ -49,7 +50,9 @@ border-bottom:2px solid black;
 }
 
 .sidebar {
-    background: #97f14250;
+    line-height: 1.3;
+    margin-top: 800px;
+    background-color: #B91646;
     border-radius: 10px;;
     color: white;
     font-family:"Futura", Times, serif;
@@ -87,12 +90,11 @@ border-bottom:2px solid black;
 }
 
 .accordion button {
-    background-color: #E0ECFD;
+    background-color: #B9164630;
     border: none !important;
 }
 
 .acordion body {
-    background-color: #E0ECFD;
     border-radius: 1000px;;
     
 }
@@ -106,19 +108,5 @@ body {
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
-}
-
-.recipe {
-    color: black;
-    background: #97f14275 !important;
-    height: 550px;
-    width: 250px;
-    padding: 20px;
-}
-
-a {
-    color: black;
-    font-size: 20px;
-    font-weight: bold;
 }
 
