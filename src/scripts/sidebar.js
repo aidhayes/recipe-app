@@ -9,13 +9,14 @@ import Image from 'react-bootstrap/Image'
 import Accordion from 'react-bootstrap/Accordion';
 import { useState } from 'react';
 
-   
+var searched = false;
 
 /**
  * Creates sidebar with filters to search for recipes
  * @returns Sidebar for filtering recipes
  */
 export default function Filters() {
+
     const [recipeArray, setRecipeArray] = useState(["",""]);
     const [recipeArray1, setRecipeArray1] = useState(["",""]);
     const [recipeArray2, setRecipeArray2] = useState(["",""]);
@@ -72,7 +73,7 @@ export default function Filters() {
             for(let i = 0; i < 5; i++){
                 var tempArray = []
                  for(let j = 0; j < 2; j++){
-                    var recipe = <a href={tempUrls[(i*2) + j]}><Image src={tempImgs[(i*2) + j]} width ="150" height = "150"/><Button variant="primary" type="submit">Favorite</Button><p><small>{tempTxts[(i*2) + j].substring(0,30)}</small></p></a>;           
+                    var recipe = <a href={tempUrls[(i*2) + j]}><Image src={tempImgs[(i*2) + j]} width ="150" height = "150"/><Button variant="primary" type="submit">Favorite</Button><p>{tempTxts[(i*2) + j].substring(0,30)}</p></a>;           
                     tempArray.push(recipe);
                  }
                  switch(i){
@@ -90,6 +91,7 @@ export default function Filters() {
                  }
             }
 
+            searched = true;
 
          }).catch(function (error) {
              console.error(error);
@@ -98,9 +100,9 @@ export default function Filters() {
 
     return (
         <>
-        <Container fluid>
+        <Container fluid className="justify-content-md-center">
             <Row>
-                <SidebarMenu className="mx-4 sidebar">
+                <SidebarMenu className="mx-4 sidebar" lg={6}>
                     <SidebarMenu.Header>
                         <p className="mx-4 my-4 pt-3">Select which ingredients you have, then press search to get recipes you can make!</p>
                     </SidebarMenu.Header>
@@ -310,25 +312,28 @@ export default function Filters() {
                     </SidebarMenu.Body>
                 </SidebarMenu>
             </Row>
-            <Row>
-                <Row gap={3} lg={12} sm={12} xs={12}>
-                        <Col lg={4} sm={4} xs={4}>
-                        {recipeArray}
-                        </Col>
-                        <Col lg={4} sm={4} xs={4}>
-                        {recipeArray1}
-                        </Col>
-                        <Col lg={4} sm={4} xs={4}>
-                        {recipeArray2}
-                        </Col>
-                        <Col lg={4} sm={4} xs={4}>
-                        {recipeArray3}
-                        </Col>
-                        <Col lg={4} sm={4} xs={4}>
-                        {recipeArray4}
-                        </Col>
+            <br/>
+            {searched == true && 
+                <Row>
+                    <Row gap={3} lg={12} sm={12} xs={12}>
+                            <Col className="recipe justify-content-md-center" lg={4} sm={4} xs={4}>
+                            {recipeArray}
+                            </Col>
+                            <Col className="recipe justify-content-md-center" lg={4} sm={4} xs={4}>
+                            {recipeArray1}
+                            </Col>
+                            <Col className="recipe justify-content-md-center" lg={4} sm={4} xs={4}>
+                            {recipeArray2}
+                            </Col>
+                            <Col className="recipe justify-content-md-center" lg={4} sm={4} xs={4}>
+                            {recipeArray3}
+                            </Col>
+                            <Col className="recipe justify-content-md-center" lg={4} sm={4} xs={4}>
+                            {recipeArray4}
+                            </Col>
+                    </Row>
                 </Row>
-            </Row>
+            }
 
         </Container>                                                                                                                                                                         
         </>
