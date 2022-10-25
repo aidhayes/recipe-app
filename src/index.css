@@ -32,9 +32,11 @@ border-bottom:2px solid black;
     text-align: center;
 }
 
-.recipes {
-    float: left;
+#w{
+    background-color: white;
+    margin-top:500px;
 }
+
 
 .websiteLogo {
     display:flex;
@@ -51,8 +53,7 @@ border-bottom:2px solid black;
 
 .sidebar {
     line-height: 1.3;
-    background-color: #B9164675;
-    border-radius: 10px;;
+    background-color: #9F877290;
     color: white;
     font-family:"Futura", Times, serif;
     font-weight: 700;
@@ -84,12 +85,12 @@ border-bottom:2px solid black;
 }
 
 .accordion button {
-    background-color: #B9164630;
+    background-color: #C8DBBE;
     border: none !important;
 }
 
 .acordion body {
-    border-radius: 1000px;;
+    border-radius: 1000px;
     
 }
 
@@ -98,7 +99,7 @@ border-bottom:2px solid black;
 }
 
 body {
-    background-image: url("maarten-van-den-heuvel-EzH46XCDQRY-unsplash.jpg");
+    background-image: url("cucumber_peach_salad-2-700x1050.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
@@ -112,11 +113,11 @@ body {
 }
 
 .recipe {
-    background-color: #B9164675;
     width: 250px;
     height: 550px;
     padding: 20px;
     margin-left: 20px;
+    background-color: #665A4880;
 }
 
 a {
@@ -124,4 +125,3 @@ a {
     font-weight: bold;
     font-size: 20px;
 }
-
