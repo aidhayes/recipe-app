@@ -20,7 +20,7 @@
 }
 
 #navbar-bottom{
-border-bottom:2px solid black;
+border-bottom:2px solid #665A48;
 }
 
 .welcome{
@@ -91,7 +91,8 @@ border-bottom:2px solid black;
 }
 
 .accordion button {
-    background-color: #C8DBBE;
+    background: #C8DBBE !important;
+    color:black !important;
     border: none !important;
 }
 
@@ -102,10 +103,10 @@ border-bottom:2px solid black;
 
 .submit{
     margin-top:10px;
+    margin-bottom:10px;
     background: #C8DBBE !important;
     color: black;
 }
-button:focus {outline:0;}
 
 body {
     background-image: url("cucumber_peach_salad-2-700x1050-transformed.jpeg");
