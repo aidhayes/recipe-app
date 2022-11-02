@@ -7,7 +7,6 @@ import Navigator from '../scripts/navbar';
 export default function Root() {
     return (
         <>
-            <Navigator/>
             <Container>
                 <Col className="welcome" id="welcome">
                     <b>Welcome to Cooking Daddy</b>, a site dedicated to helping those looking for a quick meal find recipes.
