@@ -5,26 +5,25 @@ import './index.css'
 //import Recipe from './food';
 import Filters from './scripts/sidebar.js';
 import Navigator from './scripts/navbar';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
+import {
+    createBrowserRouter,
+    RouterProvider,
+    Route,
+} from "react-router-dom";
+import Root from "./routes/root";
+
+const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Root />,
+    },
+]);
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-    <>
-        <Container fluid>
-            <Row>
-                <Navigator/>
-            </Row>
-            <br/>
-              <Col className="welcome" id="welcome">
-                 <b>Welcome to Cooking Daddy</b>, a site dedicated to helping those looking for a quick meal find recipes.
-                 <Button variant="shadow-non" type="login_button" className="login_button">Get Started</Button>
-                </Col>
-                <Filters/>
-                
-        </Container>
-
-    </>
+    <React.StrictMode>
+        <Navigator/>
+        <RouterProvider router={router}/>
+    </React.StrictMode>
 );
