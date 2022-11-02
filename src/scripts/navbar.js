@@ -1,5 +1,8 @@
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
+import { LinkContainer } from 'react-router-bootstrap';
+import {useMatch, useResolvedPath} from 'react-router-dom';
 import React from 'react';
 import '../index.css';
 
@@ -7,11 +10,13 @@ import '../index.css';
  * Creates a navigation bar that will have links to the different
  * @returns Navbar for accessing different pages on site
  */
-function Navigator() {
+export default function Navigator() {
+
+
     return (
         <Container className="justify-content-left navbar" id="navbar-bottom">
             <Navbar className="navbar">
-                <Container>
+                <LinkContainer to="/">
                     <Navbar.Brand className="brand">
                         <img
                             alt="Cooking Daddy Logo"
@@ -22,10 +27,15 @@ function Navigator() {
                             />{' '}
                             Cooking Daddy
                     </Navbar.Brand>
-                </Container>
+                    </LinkContainer>
+                    <Navbar.Collapse>
+                        <LinkContainer to="/recipe-search">
+                            <Nav.Link>Recipe Search</Nav.Link>
+                        </LinkContainer>   
+                    </Navbar.Collapse>
             </Navbar>
         </Container>
     );
 }
 
-export default Navigator;
+
