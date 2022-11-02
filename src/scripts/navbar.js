@@ -1,16 +1,16 @@
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import { LinkContainer } from 'react-router-bootstrap'
+import { LinkContainer } from 'react-router-bootstrap';
+import {useMatch, useResolvedPath} from 'react-router-dom';
 import React from 'react';
 import '../index.css';
-import { Link } from 'react-router-dom';
 
 /**
  * Creates a navigation bar that will have links to the different
  * @returns Navbar for accessing different pages on site
  */
-function Navigator() {
+export default function Navigator() {
 
 
     return (
@@ -38,4 +38,4 @@ function Navigator() {
     );
 }
 
-export default Navigator;
+

@@ -314,7 +314,7 @@ export default function Filters() {
                     </SidebarMenu>
                 </Col>
                 <Col>
-                    {searched == true && 
+                    {searched === true && 
                     <Row>
                         <Row gap={3} lg={12} sm={12} xs={12}>
                                 <Col className="recipe justify-content-md-center" lg={4} sm={4} xs={4}>
