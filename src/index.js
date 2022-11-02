@@ -4,7 +4,6 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './index.css'
 //import Recipe from './food';
 import Filters from './scripts/sidebar.js';
-import Navigator from './scripts/navbar';
 import {
     createBrowserRouter,
     RouterProvider,
@@ -23,7 +22,6 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <React.StrictMode>
-        <Navigator/>
         <RouterProvider router={router}/>
     </React.StrictMode>
 );
