@@ -9,6 +9,8 @@ import Image from 'react-bootstrap/Image'
 import Accordion from 'react-bootstrap/Accordion';
 import { useState } from 'react';
 
+
+
 var searched = false;
 
 /**
@@ -100,9 +102,9 @@ export default function Filters() {
 
     return (
         <>
-        <Container fluid className="background">
+        <Container fluid>
             <Row>
-                <Col lg={4}>
+                <Col>
                     <SidebarMenu className="mx-4 sidebar">
                         <SidebarMenu.Header>
                             <p className="mx-4 my-4 pt-3">Select which ingredients you have, then press search to get recipes you can make!</p>
@@ -313,7 +315,9 @@ export default function Filters() {
                         </SidebarMenu.Body>
                     </SidebarMenu>
                 </Col>
-                <Col>
+            </Row>
+            <Row>
+            <Col>
                     {searched === true && 
                     <Row>
                         <Row gap={3} lg={12} sm={12} xs={12}>

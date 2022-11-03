@@ -2,7 +2,6 @@ import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import { LinkContainer } from 'react-router-bootstrap';
-import {useMatch, useResolvedPath} from 'react-router-dom';
 import React from 'react';
 import '../index.css';
 
@@ -20,7 +19,7 @@ export default function Navigator() {
                     <Navbar.Brand className="brand">
                         <img
                             alt="Cooking Daddy Logo"
-                            src={require("../logo.png")}
+                            src={require("../imgs/logo.png")}
                             width="50"
                             height="50"
                             className="d-inline-block align-top"
