@@ -10,7 +10,7 @@ export default function Root() {
             <Container>
                 <Col className="welcome" id="welcome">
                     <b>Welcome to Cooking Daddy</b>, a site dedicated to helping those looking for a quick meal find recipes.
-                    <LinkContainer to="">
+                    <LinkContainer to="/login">
                         <Button variant="shadow-non" type="login_button" className="login_button">Get Started</Button>
                     </LinkContainer>
                 </Col>
