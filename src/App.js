@@ -17,12 +17,12 @@ export default function App() {
 
     return (
         <>
-            <Navigator/>
+            <Navigator />
             <Container>
                 <Routes>
-                    <Route exact path="/" element={<Root/>}/>
-                    <Route path="/recipe-search" element={<Search/>}/>
-                    <Route path="/login" element={<Login/>}/>
+                    <Route exact path="/" element={<Root />} />
+                    <Route path="/recipe-search" element={<Search />} />
+                    <Route path="/login" element={<Login />} />
                 </Routes>
             </Container>
         </>

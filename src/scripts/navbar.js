@@ -23,15 +23,15 @@ export default function Navigator() {
                             width="50"
                             height="50"
                             className="d-inline-block align-top"
-                            />{' '}
-                            Cooking Daddy
+                        />{' '}
+                        Cooking Daddy
                     </Navbar.Brand>
+                </LinkContainer>
+                <Navbar.Collapse>
+                    <LinkContainer to="/recipe-search">
+                        <Nav.Link>Recipe Search</Nav.Link>
                     </LinkContainer>
-                    <Navbar.Collapse>
-                        <LinkContainer to="/recipe-search">
-                            <Nav.Link>Recipe Search</Nav.Link>
-                        </LinkContainer>   
-                    </Navbar.Collapse>
+                </Navbar.Collapse>
             </Navbar>
         </Container>
     );

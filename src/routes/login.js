@@ -8,7 +8,7 @@ import { LinkContainer } from 'react-router-bootstrap';
 export default function Login() {
     return (
         <>
-            
+
         </>
     )
 }

@@ -5,7 +5,7 @@
 
 .header {
     margin: 10px;
-    
+
 }
 
 .logo {
@@ -15,39 +15,39 @@
     height: 50px;
 }
 
-.navbar{
+.navbar {
     background-color: white;
 }
 
-#navbar-bottom{
-border-bottom:2px solid #665A48;
+#navbar-bottom {
+    border-bottom: 2px solid #665A48;
 }
 
-.welcome{
-    margin-top:250px;
+.welcome {
+    margin-top: 250px;
     margin-left: 250px;
     margin-right: 250px;
     color: #665A48;
-    font-family:"Futura", Times, serif;
+    font-family: "Futura", Times, serif;
     font-weight: 500;
     font-size: 40px;
-    background-color: rgb(237, 228, 224,.8);
+    background-color: rgb(237, 228, 224, .8);
     text-align: center;
     padding: 50px;
 }
 
-#w{
+#w {
     background-color: white;
 }
 
 .websiteLogo {
-    display:flex;
+    display: flex;
     float: left;
     margin-right: left;
 }
 
 .addRecipe {
-    display:flex;
+    display: flex;
     float: right;
     margin-right: 10px;
     margin-top: 10px;
@@ -58,16 +58,17 @@ border-bottom:2px solid #665A48;
     background-color: #9F877290;
     color: white;
     border-radius: 10px;
-    font-family:"Futura", Times, serif;
+    font-family: "Futura", Times, serif;
     font-weight: 500;
     font-size: 20px;
     width: 90%;
     justify-content: center;
 }
+
 .links {
     float: left;
     display: block;
-    text-align:center;
+    text-align: center;
     font-size: 18px;
     padding: 10px 40px;
     width: 33.33%;
@@ -83,24 +84,24 @@ border-bottom:2px solid #665A48;
 }
 
 .filterDiv {
-    display:block;
+    display: block;
     margin-top: 30px;
 }
 
 .accordion button {
     background: #C8DBBE !important;
-    color:black !important;
+    color: black !important;
     border: none !important;
 }
 
 .acordion body {
     border-radius: 1000px;
-    
+
 }
 
-.submit{
-    margin-top:10px;
-    margin-bottom:10px;
+.submit {
+    margin-top: 10px;
+    margin-bottom: 10px;
     background: #C8DBBE !important;
     color: black;
 }
@@ -116,7 +117,7 @@ body {
     font-size: xx-large;
     color: #9F8772;
     font-weight: 500;
-    font-family:"Brush Script MT", Times, serif;
+    font-family: "Brush Script MT", Times, serif;
 }
 
 .recipe {
@@ -133,21 +134,21 @@ a {
     font-size: 20px;
 }
 
-.background{
+.background {
     margin-top: 20px;
-    background-color: rgb(44, 39, 29,.98);
+    background-color: rgb(44, 39, 29, .98);
 }
 
-.login_button{
+.login_button {
     display: block;
     background: #C8DBBE !important;
-    color:#665A48;
+    color: #665A48;
     font-size: 20px;
     font-weight: 500;
-    padding:10px;
+    padding: 10px;
     justify-content: center;
-    margin:1em auto;
-    width:30%;
+    margin: 1em auto;
+    width: 30%;
     letter-spacing: 2px;
 
 }
