@@ -106,7 +106,7 @@ border-bottom:2px solid #665A48;
 }
 
 body {
-    background-image: url("cucumber_peach_salad-2-700x1050-transformed.jpeg");
+    background-image: url("./imgs/background.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
