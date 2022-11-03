@@ -9,6 +9,8 @@ import Image from 'react-bootstrap/Image'
 import Accordion from 'react-bootstrap/Accordion';
 import { useState } from 'react';
 
+
+
 var searched = false;
 
 /**
