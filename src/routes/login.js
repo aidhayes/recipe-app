@@ -48,7 +48,7 @@ export default function Login() {
                             </Button>
                             
                         </InputGroup>
-                        
+                        <Button variant="shadow-non" type="submit" className="submit">Login</Button>
                     </Form.Group>
                 </Col>
             </Container>
