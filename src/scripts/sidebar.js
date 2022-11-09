@@ -76,8 +76,8 @@ export default function Filters() {
                 var tempArray = []
                 for (let j = 0; j < 2; j++) {
                     var name = tempTxts[(i * 2) + j];
-                    var link = "/recipe/" + name;
-                    var recipe = <Link to={link}><Image src={tempImgs[(i * 2) + j]} width="150" height="150" /><p>{name.substring(0, 30)}</p></Link>;
+                    var link = "/recipe"
+                    var recipe = <Link to='/recipe/${name}'><Image src={tempImgs[(i * 2) + j]} width="150" height="150" /><p>{name.substring(0, 30)}</p></Link>;
                     tempArray.push(recipe);
                 }
                 switch (i) {
@@ -350,7 +350,7 @@ export default function Filters() {
         </>
     );
 
-    function getRecipeName(recipe) {
+    function getRecipe(recipe) {
         return recipe;
     }
 }

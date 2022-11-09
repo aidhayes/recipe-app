@@ -1,11 +1,17 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import { Form } from "react-router-dom";
+import { Form, useParams } from "react-router-dom";
 import { Button } from 'react-bootstrap';
+import React, {useState, useEffect} from 'react';
 
 export default function Recipe() {
-    const recipe = {
+
+    const [recipe, setRecipe] = useState({name: {}})
+
+    const {name} = useParams()
+
+    const recipe1 = {
         name: "Recipe Name",
         picture: "",
         link: "",
