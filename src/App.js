@@ -10,6 +10,7 @@ import {
 import Root from './routes/root';
 import Search from './routes/search';
 import Login from './routes/login';
+import Recipe from "./routes/recipe";
 import { Container } from 'react-bootstrap';
 
 
@@ -21,8 +22,9 @@ export default function App() {
             <Container>
                 <Routes>
                     <Route exact path="/" element={<Root />} />
-                    <Route path="/recipe-search" element={<Search />} />
+                    <Route path="/recipe/search" element={<Search />} />
                     <Route path="/login" element={<Login />} />
+                    <Route path="/recipe:name" element={<Recipe/>}/>
                 </Routes>
             </Container>
         </>

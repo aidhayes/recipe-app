@@ -28,7 +28,7 @@ export default function Navigator() {
                     </Navbar.Brand>
                 </LinkContainer>
                 <Navbar.Collapse>
-                    <LinkContainer to="/recipe-search">
+                    <LinkContainer to="/recipe/search">
                         <Nav.Link>Recipe Search</Nav.Link>
                     </LinkContainer>
                 </Navbar.Collapse>
