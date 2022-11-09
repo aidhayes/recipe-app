@@ -8,7 +8,7 @@ import React from 'react';
 import Image from 'react-bootstrap/Image'
 import Accordion from 'react-bootstrap/Accordion';
 import { useState } from 'react';
-
+import { Link } from 'react-router-dom'
 
 
 var searched = false;
@@ -75,7 +75,9 @@ export default function Filters() {
             for (let i = 0; i < 5; i++) {
                 var tempArray = []
                 for (let j = 0; j < 2; j++) {
-                    var recipe = <a href={tempUrls[(i * 2) + j]}><Image src={tempImgs[(i * 2) + j]} width="150" height="150" /><Button variant="primary" type="submit">Favorite</Button><p>{tempTxts[(i * 2) + j].substring(0, 30)}</p></a>;
+                    var name = tempTxts[(i * 2) + j];
+                    var link = "/recipe/" + name;
+                    var recipe = <Link to={link}><Image src={tempImgs[(i * 2) + j]} width="150" height="150" /><p>{name.substring(0, 30)}</p></Link>;
                     tempArray.push(recipe);
                 }
                 switch (i) {
@@ -347,4 +349,8 @@ export default function Filters() {
             </Container>
         </>
     );
+
+    function getRecipeName(recipe) {
+        return recipe;
+    }
 }
