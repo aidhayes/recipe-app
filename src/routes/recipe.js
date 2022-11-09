@@ -4,45 +4,29 @@ import Col from 'react-bootstrap/Col';
 import { Form, useParams } from "react-router-dom";
 import { Button } from 'react-bootstrap';
 import React, {useState, useEffect} from 'react';
+import { useLocation } from 'react-router-dom';
+import Image from 'react-bootstrap/Image'
 
 export default function Recipe() {
 
-    const [recipe, setRecipe] = useState({name: {}})
+    
 
-    const {name} = useParams()
 
-    const recipe1 = {
-        name: "Recipe Name",
-        picture: "",
-        link: "",
+    const recipe = {
+        name: useLocation().state.name,
+        picture: useLocation().state.picture,
+        link: useLocation().state.link,
         ingredients: "ingredients",
         time: 0,
         favorite: false,
     };
 
-
     return (
-        <Container id="recipe">
-            <Row>
-                <Col>
-                    <img
-                        key={recipe.picture}
-                        src={recipe.picture || null}
-                    />
-                </Col>
-                <Col>
-                    <h1>
-                        {recipe.name}
-                        <Favorite recipe={recipe}/>
-                    </h1>
-                        {recipe.link}
-                        <Col>
-                            {recipe.ingredients}
-                            {recipe.time}
-                        </Col>
-                </Col>
-            </Row>
-        </Container>
+        <>
+            <h1>{recipe.name}</h1>
+            <Image src={recipe.picture}/>
+            <p>{recipe.link}</p>
+        </>
     )
 }
 

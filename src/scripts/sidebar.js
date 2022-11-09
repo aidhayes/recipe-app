@@ -38,7 +38,7 @@ export default function Filters() {
 
         var ingredients = ingredientArray.toString()
 
-        console.log(ingredients)
+        //console.log(ingredients)
 
         const axios = require("axios");
 
@@ -76,8 +76,27 @@ export default function Filters() {
                 var tempArray = []
                 for (let j = 0; j < 2; j++) {
                     var name = tempTxts[(i * 2) + j];
-                    var link = "/recipe"
-                    var recipe = <Link to='/recipe/${name}'><Image src={tempImgs[(i * 2) + j]} width="150" height="150" /><p>{name.substring(0, 30)}</p></Link>;
+                    var picture = tempImgs[(i * 2) + j]
+                    var url = tempUrls[(i * 2) + j]
+                    var link = "/recipe/" + name;
+                    var recipe = 
+                    <Link 
+                        to={{   
+                            pathname: link,
+                            // Enter parameters here (name, external link, picture, etc)
+                        }}
+
+                        state= {{
+                            name: name,
+                            picture: picture,
+                            link: url
+                        }}
+
+                        key={name}
+                        >
+                        <Image src={picture} width="150" height="150" />
+                        <p>{name.substring(0, 30)}</p>
+                    </Link>;
                     tempArray.push(recipe);
                 }
                 switch (i) {

@@ -24,7 +24,7 @@ export default function App() {
                     <Route exact path="/" element={<Root />} />
                     <Route path="/recipe/search" element={<Search />} />
                     <Route path="/login" element={<Login />} />
-                    <Route path="/recipe:name" element={<Recipe/>}/>
+                    <Route path="/recipe/:name" element={<Recipe/>}/>
                 </Routes>
             </Container>
         </>
