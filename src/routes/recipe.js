@@ -9,10 +9,9 @@ import Image from 'react-bootstrap/Image'
 
 export default function Recipe() {
 
-    
-
-
+    // Object for storing information on a recipe 
     const recipe = {
+        // useLocation() gets information from the Link tag (idk how else to explain it lol)
         name: useLocation().state.name,
         picture: useLocation().state.picture,
         link: useLocation().state.link,

@@ -12,11 +12,13 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import React, { useState } from 'react';
 import {FaEye} from 'react-icons/fa';
 
+// Login page
 export default function Login() {
 
 
     /**
-     * Password hiding adapted from https://codesandbox.io/s/showhide-password-on-toggle-in-react-hooks-95qcz?file=/src/App.js
+     * Enable password hiding -- when eye icon is clicked the password is hidden if visible or made visible if hidden
+     * adapted from https://codesandbox.io/s/showhide-password-on-toggle-in-react-hooks-95qcz?file=/src/App.js
      */
 
     const [showPassword, setVisibility] = useState(false);

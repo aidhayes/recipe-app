@@ -13,7 +13,7 @@ import Login from './routes/login';
 import Recipe from "./routes/recipe";
 import { Container } from 'react-bootstrap';
 
-
+// App function, mainly used for defining Routes
 export default function App() {
 
     return (

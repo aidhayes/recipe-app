@@ -42,6 +42,7 @@ export default function Filters() {
 
         const axios = require("axios");
 
+        // API information
         const options = {
             method: 'GET',
             url: 'https://edamam-recipe-search.p.rapidapi.com/search',
@@ -83,15 +84,20 @@ export default function Filters() {
                     <Link 
                         to={{   
                             pathname: link,
-                            // Enter parameters here (name, external link, picture, etc)
+
                         }}
 
+                        /**
+                         * Parameters to be passed to the recipe page
+                         * TO ADD: ingredients
+                         */
                         state= {{
                             name: name,
                             picture: picture,
                             link: url
                         }}
 
+                        // Unique key for link (still sometimes generates warnings if recipes have same names, maybe RNG/hash value)
                         key={name}
                         >
                         <Image src={picture} width="150" height="150" />
