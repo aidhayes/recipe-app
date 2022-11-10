@@ -60,10 +60,17 @@ export default function Filters() {
             var tempImgs = [];
             var tempTxts = [];
             var tempUrls = [];
+            var tempSrc = [];
+            var tempIngredients = [];
+            var tempTime = [];
             for (let i = 0; i < 10; i++) { // Fill the arrays (10 hits)
                 tempImgs[i] = response.data.hits[i].recipe.image;
                 tempTxts[i] = response.data.hits[i].recipe.label;
                 tempUrls[i] = response.data.hits[i].recipe.url;
+                tempIngredients[i] = response.data.hits[i].recipe.ingredientLines;
+                tempTime[i] = response.data.hits[i].recipe.totalTime;
+                tempSrc[i] = response.data.hits[i].recipe.source;
+                
             }
             /*
             var tempArray = [] // Temp recipe Array for storing images
@@ -79,30 +86,25 @@ export default function Filters() {
                     var name = tempTxts[(i * 2) + j];
                     var picture = tempImgs[(i * 2) + j]
                     var url = tempUrls[(i * 2) + j]
+                    var ingredients = tempIngredients[(i * 2) + j];
+                    var source = tempSrc[(i * 2) + j];
+                    var time = tempTime[(i * 2) + j];
                     var link = "/recipe/" + name;
+
+                    var data = {
+                        name: name,
+                        picture: picture,
+                        link: url,
+                        ingredients: ingredients,
+                        source: source,
+                        time: time
+                    }
+                    
                     var recipe = 
-                    <Link 
-                        to={{   
-                            pathname: link,
-
-                        }}
-
-                        /**
-                         * Parameters to be passed to the recipe page
-                         * TO ADD: ingredients
-                         */
-                        state= {{
-                            name: name,
-                            picture: picture,
-                            link: url
-                        }}
-
-                        // Unique key for link (still sometimes generates warnings if recipes have same names, maybe RNG/hash value)
-                        key={name}
-                        >
-                        <Image src={picture} width="150" height="150" />
-                        <p>{name.substring(0, 30)}</p>
-                    </Link>;
+                        <Link state={data} to={link} key={name}>
+                            <Image src={picture} width="150" height="150" />
+                            <p>{name.substring(0, 30)}</p>
+                        </Link>;
                     tempArray.push(recipe);
                 }
                 switch (i) {
@@ -374,8 +376,4 @@ export default function Filters() {
             </Container>
         </>
     );
-
-    function getRecipe(recipe) {
-        return recipe;
-    }
 }

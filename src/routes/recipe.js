@@ -9,22 +9,39 @@ import Image from 'react-bootstrap/Image'
 
 export default function Recipe() {
 
-    // Object for storing information on a recipe 
-    const recipe = {
-        // useLocation() gets information from the Link tag (idk how else to explain it lol)
-        name: useLocation().state.name,
-        picture: useLocation().state.picture,
-        link: useLocation().state.link,
-        ingredients: "ingredients",
-        time: 0,
-        favorite: false,
-    };
+    const recipe = useLocation().state
+    console.log(recipe)
+
+
+
+    // Map ingredients to a list
+    const ingredients = recipe.ingredients.map((ingredient) =>
+        <li>{ingredient}</li>
+    )
+
+    //localStorage.removeItem("data")
 
     return (
         <>
-            <h1>{recipe.name}</h1>
-            <Image src={recipe.picture}/>
-            <p>{recipe.link}</p>
+        <Container className="recipeBody">
+            <Row>
+                <h1>{recipe.name}</h1>
+                <Col lg={4} sm={4} xs={4}>
+                    <Image className="recipeImg" src={recipe.picture}/>
+                </Col>
+                <Col lg={6} sm={6} xs={6}>
+                    <p>
+                        Full recipe: <a href={recipe.link} target="_blank">{recipe.source}</a>
+                    </p>
+                    <p>
+                        Total time: {recipe.time}
+                    </p>
+                    <p>
+                        Ingredients: <ul>{ingredients}</ul>
+                    </p>
+                </Col>
+            </Row>      
+        </Container>
         </>
     )
 }

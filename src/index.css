@@ -152,3 +152,22 @@ a {
     letter-spacing: 2px;
 
 }
+
+.recipeBody {
+    background-color: rgb(44, 39, 29, .98);
+    color: white;
+}
+
+.recipeBody h1 {
+    text-align: center;
+}
+
+.recipeBody p {
+    text-align: left;
+}
+
+.recipeImg {
+    width: 100%;
+
+}
+
