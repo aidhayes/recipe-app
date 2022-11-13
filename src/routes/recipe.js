@@ -1,21 +1,22 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import { Form, useParams } from "react-router-dom";
 import { Button } from 'react-bootstrap';
 import React, {useState, useEffect} from 'react';
 import { useLocation } from 'react-router-dom';
 import Image from 'react-bootstrap/Image'
 
-export default function Recipe() {
 
+let favorites = []
+
+export default function Recipe() {
     const recipe = useLocation().state
     console.log(recipe)
 
 
 
     // Map ingredients to a list
-    const ingredients = recipe.ingredients.map((ingredient) =>
+    var ingredients = recipe.ingredients.map((ingredient) =>
         <li>{ingredient}</li>
     )
 
@@ -25,7 +26,7 @@ export default function Recipe() {
         <>
         <Container className="recipeBody">
             <Row>
-                <h1>{recipe.name}</h1>
+                <h1>{recipe.name} <Favorite recipe={recipe}/></h1>
                 <Col lg={4} sm={4} xs={4}>
                     <Image className="recipeImg" src={recipe.picture}/>
                 </Col>
@@ -36,9 +37,8 @@ export default function Recipe() {
                     <p>
                         Total time: {recipe.time}
                     </p>
-                    <p>
                         Ingredients: <ul>{ingredients}</ul>
-                    </p>
+            
                 </Col>
             </Row>      
         </Container>
@@ -47,20 +47,15 @@ export default function Recipe() {
 }
 
 function Favorite({recipe}) {
-    let favorite = recipe.favorite;
+
+    const favoriteRecipe = () => {
+
+        favorites.push(recipe)
+        console.log("Favorites" , favorites)
+
+    }
+
     return (
-        <Form method="post">
-            <Button
-                name="favorite"
-                value={favorite ? "false" : "true"}
-                aria-label={
-                    favorite
-                        ? "Remove from favorites"
-                        : "Add to favorites"
-                }
-            >
-                {favorite ? "★" : "☆"}
-            </Button>
-        </Form>
+        <Button onClick={() => favoriteRecipe()}>Favorite</Button>
     )
 };
