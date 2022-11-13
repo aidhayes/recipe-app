@@ -13,7 +13,7 @@ export default function Navigator() {
 
 
     return (
-        <Container className="justify-content-left navbar" id="navbar-bottom">
+       
             <Navbar className="navbar">
                 <LinkContainer to="/">
                     <Navbar.Brand className="brand">
@@ -29,11 +29,11 @@ export default function Navigator() {
                 </LinkContainer>
                 <Navbar.Collapse>
                     <LinkContainer to="/recipe/search">
-                        <Nav.Link>Recipe Search</Nav.Link>
+                        <Nav.Link className="recipe-search">Recipe Search</Nav.Link>
                     </LinkContainer>
                 </Navbar.Collapse>
             </Navbar>
-        </Container>
+   
     );
 }
 
