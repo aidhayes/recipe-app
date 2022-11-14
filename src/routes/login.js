@@ -12,28 +12,6 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import React, { useState } from 'react';
 import {FaEye} from 'react-icons/fa';
 
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = 
-{
-  apiKey: "AIzaSyB1x3qWn_69B738XXkH8oHEZQBxOBi17Tk",
-  authDomain: "recipe-project-53755.firebaseapp.com",
-  projectId: "recipe-project-53755",
-  storageBucket: "recipe-project-53755.appspot.com",
-  messagingSenderId: "491943591017",
-  appId: "1:491943591017:web:f953538facd126aed9f6f8",
-  measurementId: "G-8VQB9T2E0Y"
-};
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
 
 // Login page
 export default function Login() {
