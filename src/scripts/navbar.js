@@ -32,6 +32,8 @@ export default function Navigator() {
                         <Nav.Link>Recipe Search</Nav.Link>
                     </LinkContainer>
                 </Navbar.Collapse>
+                
+
             </Navbar>
         </Container>
     );
