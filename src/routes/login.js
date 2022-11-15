@@ -42,14 +42,13 @@ export default function Login() {
         const name = event.target.name;
         const value = event.target.value;
         setInputs(values => ({...values, [name]: value}))
+        console.log(inputs);
     };
 
     //When submit is pressed by user, runs logInWithEmailAndPassword.
     const handleSubmit = (event) => {
         event.preventDefault();
         logInWithEmailAndPassword(inputs.email, inputs.password);
-
-        console.log(inputs);
     };
 
 
@@ -97,15 +96,15 @@ export default function Login() {
                             <Button 
                             variant="shadow-non" 
                             type="submit" 
-                            className="submit"
-                            onClick={logInWithEmailAndPassword(inputs.email, inputs.password)}>
+                            className="login"
+                            onClick={() => logInWithEmailAndPassword(inputs.email, inputs.password)}>
                                 Login 
                             </Button>
                             <br></br>
                             <Button 
                             variant="shadow-non" 
                             type="submit" 
-                            className="submit"
+                            className="google_Login"
                             onClick={signInWithGoogle}>
                                 Login with Google
                             </Button>
