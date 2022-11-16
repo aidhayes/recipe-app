@@ -14,7 +14,8 @@ import {
 import {
     auth,
     signInWithGoogle,
-    logInWithEmailAndPassword
+    logInWithEmailAndPassword,
+    registerWithEmailAndPassword
 } from '../scripts/firebase.js';
 import { useAuthState } from 'react-firebase-hooks/auth';
 
@@ -108,6 +109,13 @@ export default function Login() {
                             className="google_Login"
                             onClick={signInWithGoogle}>
                                 Login with Google
+                            </Button>
+                            <br></br>
+                            <Button>
+                            variant="shadow-non"
+                            type="submit"
+                            className="signup"
+                            onClick={() => registerWithEmailAndPassword(inputs.email, inputs.password)}
                             </Button>
                         </Form.Group>
                     </Form>
