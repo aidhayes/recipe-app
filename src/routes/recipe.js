@@ -2,7 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Button } from 'react-bootstrap';
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import { useLocation } from 'react-router-dom';
 import Image from 'react-bootstrap/Image'
 
@@ -50,7 +50,8 @@ function Favorite({recipe}) {
 
     const favoriteRecipe = () => {
 
-        favorites.push(recipe)
+        if (!favorites.includes(recipe))
+            favorites.push(recipe)
         console.log("Favorites" , favorites)
 
     }
