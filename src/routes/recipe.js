@@ -7,7 +7,7 @@ import { useLocation } from 'react-router-dom';
 import Image from 'react-bootstrap/Image'
 
 
-let favorites = []
+let favoriteRecipes = []
 
 export default function Recipe() {
     const recipe = useLocation().state
@@ -32,7 +32,7 @@ export default function Recipe() {
                 </Col>
                 <Col lg={6} sm={6} xs={6}>
                     <p>
-                        Full recipe: <a href={recipe.link} target="_blank">{recipe.source}</a>
+                        Full recipe: <a href={recipe.link} target="_blank" rel="noreferrer">{recipe.source}</a>
                     </p>
                     <p>
                         Total time: {recipe.time}
@@ -50,9 +50,10 @@ function Favorite({recipe}) {
 
     const favoriteRecipe = () => {
 
-        if (!favorites.includes(recipe))
-            favorites.push(recipe)
-        console.log("Favorites" , favorites)
+        if (!favoriteRecipes.includes(recipe))
+            favoriteRecipes.push(recipe)
+        console.log("Favorites" , favoriteRecipes)
+        window.localStorage.setItem("favorites", JSON.stringify(favoriteRecipes))
 
     }
 

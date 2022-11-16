@@ -2,7 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import './index.css'
 import Navigator from './scripts/navbar';
-
+import Favorites from './routes/favorites';
 import {
     Route,
     Routes,
@@ -22,9 +22,10 @@ export default function App() {
             <Container>
                 <Routes>
                     <Route exact path="/" element={<Root />} />
-                    <Route path="/recipe/search" element={<Search />} />
+                    <Route path="/search" element={<Search />} />
                     <Route path="/login" element={<Login />} />
                     <Route path="/recipe/:name" element={<Recipe/>}/>
+                    <Route path="/favorites" element={<Favorites/>}/>
                 </Routes>
             </Container>
         </>

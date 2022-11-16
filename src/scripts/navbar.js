@@ -73,8 +73,11 @@ export default function Navigator() {
                     </Navbar.Brand>
                 </LinkContainer>
                 <Navbar.Collapse>
-                    <LinkContainer to="/recipe/search">
+                    <LinkContainer to="/search">
                         <Nav.Link className="recipe-search">Recipe Search</Nav.Link>
+                    </LinkContainer>
+                    <LinkContainer to="/favorites">
+                        <Nav.Link className="recipe-search">Favorites</Nav.Link>
                     </LinkContainer>
                 </Navbar.Collapse>    
             </Navbar>
