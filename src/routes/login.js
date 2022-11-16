@@ -111,11 +111,12 @@ export default function Login() {
                                 Login with Google
                             </Button>
                             <br></br>
-                            <Button>
+                            <Button
                             variant="shadow-non"
                             type="submit"
                             className="signup"
-                            onClick={() => registerWithEmailAndPassword(inputs.email, inputs.password)}
+                            onClick={() => registerWithEmailAndPassword(inputs.email, inputs.password)}>
+                                Sign up
                             </Button>
                         </Form.Group>
                     </Form>
