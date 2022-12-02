@@ -9,6 +9,10 @@ import Image from 'react-bootstrap/Image'
 
 let favoriteRecipes = []
 
+/**
+ * 
+ * @returns 
+ */
 export default function Recipe() {
     const recipe = useLocation().state
     console.log(recipe)
