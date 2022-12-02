@@ -95,7 +95,6 @@ export default function Login() {
                             </InputGroup>
                             <Button 
                             variant="shadow-non" 
-                            type="submit" 
                             className="login"
                             onClick={() => logInWithEmailAndPassword(inputs.email, inputs.password)}>
                                 Login 
@@ -103,7 +102,6 @@ export default function Login() {
                             <br></br>
                             <Button 
                             variant="shadow-non" 
-                            type="submit" 
                             className="google_Login"
                             onClick={signInWithGoogle}>
                                 Login with Google
@@ -111,7 +109,6 @@ export default function Login() {
                             <br></br>
                             <Button
                             variant="shadow-non"
-                            type="submit"
                             className="signup"
                             onClick={() => registerWithEmailAndPassword(inputs.name, inputs.email, inputs.password)}>
                                 Sign up
