@@ -183,44 +183,115 @@ export default function Filters() {
                                             <Accordion.Body>
                                                 <Row>
                                                     <Form.Group controlId="vegetables">
-                                                        <Form.Check type="checkbox" name="Artichokes" label="Artichokes" />
-                                                        <Form.Check type="checkbox" name="Asparagus" label="Asparagus" />
-                                                        <Form.Check type="checkbox" name="Baked Beans" label="Baked Beans" />
-                                                        <Form.Check type="checkbox" name="Beetroot" label="Beetroot" />
-                                                        <Form.Check type="checkbox" name="Black Beans" label="Black Beans" />
-                                                        <Form.Check type="checkbox" name="Broccoli" label="Broccoli" />
-                                                        <Form.Check type="checkbox" name="Brussel Sprouts" label="Brussel Sprouts" />
-                                                        <Form.Check type="checkbox" name="Carrots" label="Carrots" />
-                                                        <Form.Check type="checkbox" name="Celery" label="Celery" />
-                                                        <Form.Check type="checkbox" name="Chilli Peppers" label="Chilli Peppers" />
-                                                        <Form.Check type="checkbox" name="Corn" label="Corn" />
-                                                        <Form.Check type="checkbox" name="Cucumbers" label="Cucumbers" />
-                                                        <Form.Check type="checkbox" name="Eggplant" label="Eggplant" />
-                                                        <Form.Check type="checkbox" name="French Beans" label="French Beans" />
-                                                        <Form.Check type="checkbox" name="Green Beans" label="Green Beans" />
-                                                        <Form.Check type="checkbox" name="Green Onions" label="Green Onions" />
-                                                        <Form.Check type="checkbox" name="Green Pepper" label="Green Pepper" />
-                                                        <Form.Check type="checkbox" name="Kale" label="Kale" />
-                                                        <Form.Check type="checkbox" name="Leeks" label="Leeks" />
-                                                        <Form.Check type="checkbox" name="Lettuce" label="Lettuce" />
-                                                        <Form.Check type="checkbox" name="Mushrooms" label="Mushrooms" />
-                                                        <Form.Check type="checkbox" name="Pinto Beans" label="Pinto Beans" />
-                                                        <Form.Check type="checkbox" name="Potatoes" label="Potatoes" />
-                                                        <Form.Check type="checkbox" name="Radish" label="Radish" />
-                                                        <Form.Check type="checkbox" name="Red Pepper" label="Red Pepper" />
-                                                        <Form.Check type="checkbox" name="Red Onions" label="Red Onions" />
-                                                        <Form.Check type="checkbox" name="Rhubarb" label="Rhubarb" />
-                                                        <Form.Check type="checkbox" name="Salad Mix" label="Salad Mix" />
-                                                        <Form.Check type="checkbox" name="Shallots" label="Shallots" />
-                                                        <Form.Check type="checkbox" name="Spinach" label="Spinach" />
-                                                        <Form.Check type="checkbox" name="Spring Onions" label="Spring Onions" />
-                                                        <Form.Check type="checkbox" name="Sweet Corn" label="Sweet Corn" />
-                                                        <Form.Check type="checkbox" name="Tomatoes" label="Tomatoes" />
-                                                        <Form.Check type="checkbox" name="Turnips" label="Turnips" />
-                                                        <Form.Check type="checkbox" name="Yams" label="Yams" />
-                                                        <Form.Check type="checkbox" name="Yellow Pepper" label="Yellow Pepper" />
-                                                        <Form.Check type="checkbox" name="Yellow Onions" label="Yellow Onions" />
-
+                                                    <Accordion>
+                                                        <Accordion.Item eventKey="0">
+                                                            <Accordion.Header>A</Accordion.Header>
+                                                                <Accordion.Body>
+                                                                    <Form.Check type="checkbox" name="Artichokes" label="Artichokes" />
+                                                                    <Form.Check type="checkbox" name="Asparagus" label="Asparagus" />
+                                                                </Accordion.Body>
+                                                        </Accordion.Item>
+                                                        <Accordion.Item eventKey="1">
+                                                            <Accordion.Header>B</Accordion.Header>
+                                                                <Accordion.Body>
+                                                                    <Form.Check type="checkbox" name="Baked Beans" label="Baked Beans" />
+                                                                    <Form.Check type="checkbox" name="Beetroot" label="Beetroot" />
+                                                                    <Form.Check type="checkbox" name="Black Beans" label="Black Beans" />
+                                                                    <Form.Check type="checkbox" name="Broccoli" label="Broccoli" />
+                                                                    <Form.Check type="checkbox" name="Brussel Sprouts" label="Brussel Sprouts" />
+                                                                </Accordion.Body>
+                                                        </Accordion.Item>
+                                                        <Accordion.Item eventKey="2">
+                                                            <Accordion.Header>B</Accordion.Header>
+                                                                <Accordion.Body>
+                                                                    <Form.Check type="checkbox" name="Carrots" label="Carrots" />
+                                                                    <Form.Check type="checkbox" name="Celery" label="Celery" />
+                                                                    <Form.Check type="checkbox" name="Chilli Peppers" label="Chilli Peppers" />
+                                                                    <Form.Check type="checkbox" name="Corn" label="Corn" />
+                                                                    <Form.Check type="checkbox" name="Cucumbers" label="Cucumbers" />
+                                                                </Accordion.Body>
+                                                        </Accordion.Item>
+                                                        <Accordion.Item eventKey="5">
+                                                            <Accordion.Header>E</Accordion.Header>
+                                                                <Accordion.Body>
+                                                                    <Form.Check type="checkbox" name="Eggplant" label="Eggplant" />
+                                                                </Accordion.Body>
+                                                        </Accordion.Item>
+                                                        <Accordion.Item eventKey="6">
+                                                            <Accordion.Header>F</Accordion.Header>
+                                                                <Accordion.Body>
+                                                                    <Form.Check type="checkbox" name="French Beans" label="French Beans" />
+                                                                </Accordion.Body>
+                                                        </Accordion.Item>
+                                                        <Accordion.Item eventKey="7">
+                                                            <Accordion.Header>G</Accordion.Header>
+                                                                <Accordion.Body>
+                                                                    <Form.Check type="checkbox" name="Green Beans" label="Green Beans" />
+                                                                    <Form.Check type="checkbox" name="Green Onions" label="Green Onions" />
+                                                                    <Form.Check type="checkbox" name="Green Pepper" label="Green Pepper" />
+                                                                </Accordion.Body>
+                                                        </Accordion.Item>
+                                                        <Accordion.Item eventKey="11">
+                                                            <Accordion.Header>K</Accordion.Header>
+                                                                <Accordion.Body>
+                                                                    <Form.Check type="checkbox" name="Kale" label="Kale" />
+                                                                </Accordion.Body>
+                                                        </Accordion.Item>
+                                                        <Accordion.Item eventKey="12">
+                                                            <Accordion.Header>L</Accordion.Header>
+                                                                <Accordion.Body>
+                                                                    <Form.Check type="checkbox" name="Leeks" label="Leeks" />
+                                                                    <Form.Check type="checkbox" name="Lettuce" label="Lettuce" />
+                                                                </Accordion.Body>
+                                                        </Accordion.Item>
+                                                        <Accordion.Item eventKey="13">
+                                                            <Accordion.Header>M</Accordion.Header>
+                                                                <Accordion.Body>
+                                                                    <Form.Check type="checkbox" name="Mushrooms" label="Mushrooms" />
+                                                                </Accordion.Body>
+                                                        </Accordion.Item>
+                                                        <Accordion.Item eventKey="16">
+                                                            <Accordion.Header>P</Accordion.Header>
+                                                                <Accordion.Body>
+                                                                    <Form.Check type="checkbox" name="Pinto Beans" label="Pinto Beans" />
+                                                                    <Form.Check type="checkbox" name="Potatoes" label="Potatoes" />
+                                                                </Accordion.Body>
+                                                        </Accordion.Item>
+                                                        <Accordion.Item eventKey="18">
+                                                            <Accordion.Header>R</Accordion.Header>
+                                                                <Accordion.Body>
+                                                                    <Form.Check type="checkbox" name="Radish" label="Radish" />
+                                                                    <Form.Check type="checkbox" name="Red Pepper" label="Red Pepper" />
+                                                                    <Form.Check type="checkbox" name="Red Onions" label="Red Onions" />
+                                                                    <Form.Check type="checkbox" name="Rhubarb" label="Rhubarb" />
+                                                                </Accordion.Body>
+                                                        </Accordion.Item>
+                                                        <Accordion.Item eventKey="19">
+                                                            <Accordion.Header>S</Accordion.Header>
+                                                                <Accordion.Body>
+                                                                    <Form.Check type="checkbox" name="Salad Mix" label="Salad Mix" />
+                                                                    <Form.Check type="checkbox" name="Shallots" label="Shallots" />
+                                                                    <Form.Check type="checkbox" name="Spinach" label="Spinach" />
+                                                                    <Form.Check type="checkbox" name="Spring Onions" label="Spring Onions" />
+                                                                    <Form.Check type="checkbox" name="Sweet Corn" label="Sweet Corn" />
+                                                                </Accordion.Body>
+                                                        </Accordion.Item>
+                                                        <Accordion.Item eventKey="20">
+                                                            <Accordion.Header>T</Accordion.Header>
+                                                                <Accordion.Body>
+                                                                    <Form.Check type="checkbox" name="Tomatoes" label="Tomatoes" />
+                                                                    <Form.Check type="checkbox" name="Turnips" label="Turnips" />
+                                                                </Accordion.Body>
+                                                        </Accordion.Item>
+                                                        <Accordion.Item eventKey="25">
+                                                            <Accordion.Header>Y</Accordion.Header>
+                                                                <Accordion.Body>
+                                                                    <Form.Check type="checkbox" name="Yams" label="Yams" />
+                                                                    <Form.Check type="checkbox" name="Yellow Onions" label="Yellow Onions" />
+                                                                    <Form.Check type="checkbox" name="Yellow Pepper" label="Yellow Pepper" />
+                                                                </Accordion.Body>
+                                                        </Accordion.Item>
+                                                        </Accordion>
                                                     </Form.Group>
                                                 </Row>
                                             </Accordion.Body>
@@ -230,44 +301,115 @@ export default function Filters() {
                                             <Accordion.Body>
                                                 <Row>
                                                     <Form.Group controlId='spices'>
-                                                        <Form.Label>Spices</Form.Label>
-                                                        <Form.Check type="checkbox" name="Allspice" label="Allspice" />
-                                                        <Form.Check type="checkbox" name="Basil" label="Basil" />
-                                                        <Form.Check type="checkbox" name="Bay Leaves" label="Bay Leaves" />
-                                                        <Form.Check type="checkbox" name="Black Pepper" label="Black Pepper" />
-                                                        <Form.Check type="checkbox" name="Cardamon" label="Cardamom" />
-                                                        <Form.Check type="checkbox" name="Cayenne Pepper" label="Cayenne Pepper" />
-                                                        <Form.Check type="checkbox" name="Celery Salt" label="Celery Salt" />
-                                                        <Form.Check type="checkbox" name="Celery Seeds" label="Celery Seeds" />
-                                                        <Form.Check type="checkbox" name="Chili Powder" label="Chili Powder" />
-                                                        <Form.Check type="checkbox" name="Chives" label="Chives" />
-                                                        <Form.Check type="checkbox" name="Cilantro" label="Cilantro" />
-                                                        <Form.Check type="checkbox" name="Cinnamon" label="Cinnamon" />
-                                                        <Form.Check type="checkbox" name="Curry Powder" label="Curry Powder" />
-                                                        <Form.Check type="checkbox" name="Fennel Seeds" label="Fennel Seeds" />
-                                                        <Form.Check type="checkbox" name="Garlic" label="Garlic" />
-                                                        <Form.Check type="checkbox" name="Garlic Powder" label="Garlic Powder" />
-                                                        <Form.Check type="checkbox" name="Garlic Salt" label="Garlic Salt" />
-                                                        <Form.Check type="checkbox" name="Ginger" label="Ginger" />
-                                                        <Form.Check type="checkbox" name="Horseradish" label="Horseradish" />
-                                                        <Form.Check type="checkbox" name="Lemon Extract" label="Lemon Extract" />
-                                                        <Form.Check type="checkbox" name="Marjoram Leaves" label="Marjoram Leaves" />
-                                                        <Form.Check type="checkbox" name="Mustard Powder" label="Mustard Powder" />
-                                                        <Form.Check type="checkbox" name="Nutmeg" label="Nutmeg" />
-                                                        <Form.Check type="checkbox" name="Onion Powder" label="Onion Powder" />
-                                                        <Form.Check type="checkbox" name="Oregano" label="Oregano" />
-                                                        <Form.Check type="checkbox" name="Paprika" label="Paprika" />
-                                                        <Form.Check type="checkbox" name="Smoked Paprika" label="Smoked Paprika" />
-                                                        <Form.Check type="checkbox" name="Poppy Seeds" label="Poppy Seeds" />
-                                                        <Form.Check type="checkbox" name="Pumpkin Spice" label="Pumpkin Spice" />
-                                                        <Form.Check type="checkbox" name="Red Pepper Flakes" label="Red Pepper Flakes" />
-                                                        <Form.Check type="checkbox" name="Rosemary" label="Rosemary" />
-                                                        <Form.Check type="checkbox" name="Salt" label="Salt" />
-                                                        <Form.Check type="checkbox" name="Saffron" label="Saffron" />
-                                                        <Form.Check type="checkbox" name="Sesame Seeds" label="Sesame Seeds" />
-                                                        <Form.Check type="checkbox" name="Shallots" label="Shallots" />
-                                                        <Form.Check type="checkbox" name="Thyme" label="Thyme" />
-                                                        <Form.Check type="checkbox" name="Turmeric Powder" label="Turmeric Powder" />
+                                                        <Accordion>
+                                                        <Accordion.Item eventKey="0">
+                                                            <Accordion.Header>A</Accordion.Header>
+                                                                <Accordion.Body>
+                                                                    <Form.Check type="checkbox" name="Allspice" label="Allspice" />
+                                                                </Accordion.Body>
+                                                        </Accordion.Item>
+                                                        <Accordion.Item eventKey="2">
+                                                            <Accordion.Header>B</Accordion.Header>
+                                                                <Accordion.Body>
+                                                                    <Form.Check type="checkbox" name="Basil" label="Basil" />
+                                                                    <Form.Check type="checkbox" name="Bay Leaves" label="Bay Leaves" />
+                                                                    <Form.Check type="checkbox" name="Black Pepper" label="Black Pepper" />
+                                                                </Accordion.Body>
+                                                        </Accordion.Item>
+                                                        <Accordion.Item eventKey="3">
+                                                            <Accordion.Header>C</Accordion.Header>
+                                                                <Accordion.Body>
+                                                                    <Form.Check type="checkbox" name="Cardamon" label="Cardamom" />
+                                                                    <Form.Check type="checkbox" name="Cayenne Pepper" label="Cayenne Pepper" />
+                                                                    <Form.Check type="checkbox" name="Celery Salt" label="Celery Salt" />
+                                                                    <Form.Check type="checkbox" name="Celery Seeds" label="Celery Seeds" />
+                                                                    <Form.Check type="checkbox" name="Chili Powder" label="Chili Powder" />
+                                                                    <Form.Check type="checkbox" name="Chives" label="Chives" />
+                                                                    <Form.Check type="checkbox" name="Cilantro" label="Cilantro" />
+                                                                    <Form.Check type="checkbox" name="Cinnamon" label="Cinnamon" />
+                                                                    <Form.Check type="checkbox" name="Curry Powder" label="Curry Powder" />
+                                                                </Accordion.Body>
+                                                        </Accordion.Item>
+                                                        <Accordion.Item eventKey="6">
+                                                            <Accordion.Header>F</Accordion.Header>
+                                                                <Accordion.Body>
+                                                                    <Form.Check type="checkbox" name="Fennel Seeds" label="Fennel Seeds" />
+                                                            </Accordion.Body>
+                                                        </Accordion.Item>
+                                                        <Accordion.Item eventKey="7">
+                                                            <Accordion.Header>G</Accordion.Header>
+                                                                <Accordion.Body>
+                                                                    <Form.Check type="checkbox" name="Garlic" label="Garlic" />
+                                                                    <Form.Check type="checkbox" name="Garlic Powder" label="Garlic Powder" />
+                                                                    <Form.Check type="checkbox" name="Garlic Salt" label="Garlic Salt" />
+                                                                    <Form.Check type="checkbox" name="Ginger" label="Ginger" />
+                                                                </Accordion.Body>
+                                                        </Accordion.Item>
+                                                        <Accordion.Item eventKey="8">
+                                                            <Accordion.Header>H</Accordion.Header>
+                                                                <Accordion.Body>
+                                                                    <Form.Check type="checkbox" name="Horseradish" label="Horseradish" />
+                                                                </Accordion.Body>
+                                                        </Accordion.Item>
+                                                        <Accordion.Item eventKey="12">
+                                                            <Accordion.Header>L</Accordion.Header>
+                                                                <Accordion.Body>
+                                                                    <Form.Check type="checkbox" name="Lemon Extract" label="Lemon Extract" />
+                                                                </Accordion.Body>
+                                                        </Accordion.Item>
+                                                        <Accordion.Item eventKey="13">
+                                                            <Accordion.Header>M</Accordion.Header>
+                                                                <Accordion.Body>
+                                                                    <Form.Check type="checkbox" name="Marjoram Leaves" label="Marjoram Leaves" /> 
+                                                                    <Form.Check type="checkbox" name="Mustard Powder" label="Mustard Powder" />
+                                                                </Accordion.Body>
+                                                        </Accordion.Item>
+                                                        <Accordion.Item eventKey="14">
+                                                            <Accordion.Header>N</Accordion.Header>
+                                                                <Accordion.Body>
+                                                                    <Form.Check type="checkbox" name="Nutmeg" label="Nutmeg" />
+                                                                </Accordion.Body>
+                                                        </Accordion.Item>
+                                                        <Accordion.Item eventKey="15">
+                                                            <Accordion.Header>O</Accordion.Header>
+                                                                <Accordion.Body>
+                                                                <Form.Check type="checkbox" name="Onion Powder" label="Onion Powder" />
+                                                                <Form.Check type="checkbox" name="Oregano" label="Oregano" />
+                                                            </Accordion.Body>
+                                                        </Accordion.Item>
+                                                        <Accordion.Item eventKey="16">
+                                                            <Accordion.Header>P</Accordion.Header>
+                                                                <Accordion.Body>
+                                                                    <Form.Check type="checkbox" name="Paprika" label="Paprika" />
+                                                                    <Form.Check type="checkbox" name="Smoked Paprika" label="Smoked Paprika" />
+                                                                    <Form.Check type="checkbox" name="Poppy Seeds" label="Poppy Seeds" />
+                                                                    <Form.Check type="checkbox" name="Pumpkin Spice" label="Pumpkin Spice" />
+                                                                </Accordion.Body>
+                                                        </Accordion.Item>
+                                                        <Accordion.Item eventKey="18">
+                                                            <Accordion.Header>R</Accordion.Header>
+                                                                <Accordion.Body>
+                                                                    <Form.Check type="checkbox" name="Red Pepper Flakes" label="Red Pepper Flakes" />
+                                                                    <Form.Check type="checkbox" name="Rosemary" label="Rosemary" />
+                                                                </Accordion.Body>
+                                                        </Accordion.Item>
+                                                        <Accordion.Item eventKey="19">
+                                                            <Accordion.Header>S</Accordion.Header>
+                                                                <Accordion.Body>
+                                                                    <Form.Check type="checkbox" name="Salt" label="Salt" />
+                                                                    <Form.Check type="checkbox" name="Saffron" label="Saffron" />
+                                                                    <Form.Check type="checkbox" name="Sesame Seeds" label="Sesame Seeds" />
+                                                                    <Form.Check type="checkbox" name="Shallots" label="Shallots" />
+                                                                </Accordion.Body>
+                                                            </Accordion.Item>
+                                                        <Accordion.Item eventKey="20">
+                                                            <Accordion.Header>T</Accordion.Header>
+                                                                <Accordion.Body> 
+                                                                    <Form.Check type="checkbox" name="Thyme" label="Thyme" />
+                                                                    <Form.Check type="checkbox" name="Turmeric Powder" label="Turmeric Powder" />
+                                                                </Accordion.Body>
+                                                        </Accordion.Item>
+                                                        </Accordion>
                                                     </Form.Group>
                                                 </Row>
                                             </Accordion.Body>
