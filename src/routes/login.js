@@ -15,6 +15,7 @@ import {
     registerWithEmailAndPassword
 } from '../scripts/firebase.js';
 import { useAuthState } from 'react-firebase-hooks/auth';
+import { LinkContainer } from 'react-router-bootstrap';
 
 
 
@@ -112,7 +113,7 @@ export default function Login() {
                             variant="shadow-non"
                             type="submit"
                             className="signup"
-                            onClick={() => registerWithEmailAndPassword(inputs.email, inputs.password)}>
+                            onClick={() => registerWithEmailAndPassword(inputs.name, inputs.email, inputs.password)}>
                                 Sign up
                             </Button>
                         </Form.Group>
