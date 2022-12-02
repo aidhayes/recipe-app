@@ -7,10 +7,7 @@ import Col from 'react-bootstrap/Col';
 import InputGroup from 'react-bootstrap/InputGroup';
 import React, { useState, useEffect } from 'react';
 import {FaEye} from 'react-icons/fa';
-import {
-    Link,
-    useNavigate
-} from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
     auth,
     signInWithGoogle,
