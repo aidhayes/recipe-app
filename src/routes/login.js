@@ -33,7 +33,7 @@ export default function Login() {
         if(loading) {
             return;
         }
-        if(user) navigate("/recipe/search");
+        if(user) navigate("/search");
     }, [user, loading]);
     
     //Helper Fuctions

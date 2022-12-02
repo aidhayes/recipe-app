@@ -22,12 +22,12 @@ export default function App() {
             <Navigator />
             <Container>
                 <Routes>
-                    <Route exact path="/" element={<Root />} />
-                    <Route path="/search" element={<Search />} />
-                    <Route path="/login" element={<Login />} />
-                    <Route path="/register" element={<Register />} />
-                    <Route path="/recipe/:name" element={<Recipe/>}/>
-                    <Route path="/favorites" element={<Favorites/>}/>
+                    <Route index exact path="/" element={<Root />} />
+                    <Route exact path="/search" element={<Search />} />
+                    <Route exact path="/login" element={<Login />} />
+                    <Route exact path="/register" element={<Register />} />
+                    <Route exact path="/recipe/:name" element={<Recipe/>}/>
+                    <Route exact path="/favorites" element={<Favorites/>}/>
                 </Routes>
             </Container>
         </>
