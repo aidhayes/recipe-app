@@ -10,7 +10,7 @@ export default function Favorites() {
     if (favorites != null) {
     console.log(favorites)
         for (let i = 0; i < favorites.length; i++) {
-            let recipe = <Link state={favorites[i]} to={"/recipe" + favorites[i].name} key={favorites[i].name}>
+            let recipe = <Link state={favorites[i]} to={"/recipe/" + favorites[i].name} key={favorites[i].name}>
                 <Image src={favorites[i].picture} width="150" height="150" />
                 <p>{favorites[i].name.substring(0, 30)}</p>
             </Link>
