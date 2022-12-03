@@ -117,7 +117,7 @@ body {
 
 .brand {
     font-size: xx-large;
-    color: #9F8772;
+    color: #9F8772 !important;
     font-weight: 500;
     font-family: "Brush Script MT", Times, serif;
 }
