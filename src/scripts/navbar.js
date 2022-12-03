@@ -89,7 +89,7 @@ export default function Navigator() {
 
                 <LinkContainer to = "/login" 
                 id="logged_out_div">
-                    <Button><FaUserCircle/></Button>
+                    <FaUserCircle className="loggedOut"/>
                 </LinkContainer>
                 
                 <div id = "logged_in_div"
