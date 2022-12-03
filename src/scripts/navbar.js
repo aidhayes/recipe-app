@@ -2,6 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import { LinkContainer } from 'react-router-bootstrap';
+import Button from 'react-bootstrap/Button';
 import React, { useEffect, useState } from 'react';
 import '../index.css';
 import { useAuthState } from "react-firebase-hooks/auth";
@@ -17,6 +18,8 @@ import {
     getDocs,
     where
 } from "firebase/firestore";
+
+import {FaUserCircle} from 'react-icons/fa';
 
 /**
  * Creates a navigation bar that will have links to the different
@@ -86,7 +89,7 @@ export default function Navigator() {
 
                 <LinkContainer to = "/login" 
                 id="logged_out_div">
-                    <button>Sign in</button>
+                    <Button><FaUserCircle/></Button>
                 </LinkContainer>
                 
                 <div id = "logged_in_div"
@@ -96,9 +99,9 @@ export default function Navigator() {
                     <br></br>
                     <div>{user?.email}</div>
                     <br></br>
-                    <button 
+                    <Button 
                     className="logout_btn"
-                    onClick={logout}> Logout </button>
+                    onClick={logout}> Logout </Button>
                 </div>
             </Navbar>
 
