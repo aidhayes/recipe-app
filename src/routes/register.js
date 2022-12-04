@@ -3,6 +3,10 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { Link, useNavigate } from "react-router-dom";
 import { auth, registerWithEmailAndPassword, signInWithGoogle } from "../scripts/firebase";
 import "../register.css";
+
+//This is the function that allows users to register a new
+//email to firebase and have stored there with their own
+//personal ID 
 function Register() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
