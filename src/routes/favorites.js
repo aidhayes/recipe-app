@@ -5,6 +5,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
 // Page that displays a users favorited recipes
+// Aidan
 export default function Favorites() {
     let recipes = [];
     let favorites = JSON.parse(window.localStorage.getItem("favorites"));

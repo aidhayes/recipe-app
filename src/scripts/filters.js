@@ -15,6 +15,7 @@ var searched = false;
 
 // Search for recipes using Edamam API. 
 // Input ingredients and return first 10 results
+// Alden, Ashton, Aidan, Joe
 export default function Filters() {
 
     const [recipeArray, setRecipeArray] = useState(["", ""]);

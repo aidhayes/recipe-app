@@ -24,6 +24,7 @@ import {
 
 /**
  * Creates a navigation bar that will have links to the different
+ * Aidan, Matthew
  * @returns Navbar for accessing different pages on site
  */
 export default function Navigator() {

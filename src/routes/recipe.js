@@ -11,6 +11,7 @@ let favoriteRecipes = []
 
 // Dynamic pages that display a recipe from recipe search. User will be able to see ingredients, image, and an option to favorite. 
 // For full recipe, user can go to external site that is linked
+// Aidan
 export default function Recipe() {
     const recipe = useLocation().state
     console.log(recipe)
