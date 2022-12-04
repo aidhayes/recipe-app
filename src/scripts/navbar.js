@@ -23,8 +23,8 @@ import {
 
 
 /**
- * Creates a navigation bar that will have links to the different
  * Aidan, Matthew
+ * Creates a navigation bar that will have links to the different
  * @returns Navbar for accessing different pages on site
  */
 export default function Navigator() {
@@ -99,6 +99,9 @@ export default function Navigator() {
                     <Row>
                         <Col>
                             {name}
+                        </Col>
+                        <Col>
+                        {user?.email}
                         </Col>
                         <Col>
                             <Button 
