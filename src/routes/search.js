@@ -1,7 +1,7 @@
 import React from 'react';
 import '../index.css';
 
-import Filters from '../scripts/sidebar';
+import Filters from '../scripts/filters';
 
 // Recipe search page
 export default function Search() {
