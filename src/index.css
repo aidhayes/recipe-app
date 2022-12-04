@@ -23,10 +23,12 @@
 
 .navbar {
     background-color: white;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
 }
 
 .welcome {
-    margin-top: 100px;
+    margin-top: 200px;
     margin-left: 250px;
     margin-right: 250px;
     color: #665A48;
@@ -117,7 +119,7 @@ body {
 
 .brand {
     font-size: xx-large;
-    color: #9F8772;
+    color: #9F8772 !important;
     font-weight: 500;
     font-family: "Brush Script MT", Times, serif;
 }
@@ -127,7 +129,7 @@ body {
     height: 550px;
     padding: 20px;
     margin-left: 20px;
-
+    text-align: center;
 }
 
 a {
@@ -143,13 +145,29 @@ a {
 
 .recipe-search{
     color:rgb(0, 0, 0);
-    background-color: #C8DBBE;
-    padding: 10px;
-    border-radius: 10px;
+    background-color: none;
     font-weight:bold;
-    margin: 10px;
+    margin-left: 1350px;
+
+}
+.recipe-favorite{
+    color:rgb(0, 0, 0);
+    background-color: none;
+    font-weight:bold;
+    margin-left: 30px;
 }
 
+.sign-in{
+    position: relative;
+    color:rgb(0, 0, 0);
+    background-color: #C8DBBE;
+    border:none;
+    font-weight:bold;
+    padding:5px 15px 5px 15px;
+    border-radius: 100px;
+    margin-right: 25px;
+
+}
 .login_button {
     display: block;
     background: #C8DBBE !important;
@@ -183,6 +201,11 @@ a {
     width: 100%;
     border-radius: 20px;
 
+}
+
+.favorite{
+    background-color: red !important;
+    border: none;
 }
 
 a:link { text-decoration: none; }

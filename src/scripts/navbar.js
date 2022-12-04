@@ -61,7 +61,7 @@ export default function Navigator() {
     }, [user, loading]);
 
     return (
-        <Container className="navbar" id="navbar-bottom">
+        <container-fluid className="navbar" id="navbar-bottom">
             <Navbar className="justify-content-left navbar">
                 <LinkContainer to="/">
                     <Navbar.Brand className="brand">
@@ -80,16 +80,16 @@ export default function Navigator() {
                         <Nav.Link className="recipe-search">Recipe Search</Nav.Link>
                     </LinkContainer>
                     <LinkContainer to="/favorites">
-                        <Nav.Link className="recipe-search">Favorites</Nav.Link>
+                        <Nav.Link className="recipe-favorite">Favorites</Nav.Link>
                     </LinkContainer>
                 </Navbar.Collapse>    
-            </Navbar>
+
 
             <Navbar className="justify-content-right navbar">
 
                 <LinkContainer to = "/login" 
                 id="logged_out_div">
-                    <FaUserCircle className="loggedOut"/>
+                    <button className="sign-in">Sign in</button>
                 </LinkContainer>
                 
                 <div id = "logged_in_div"
@@ -103,10 +103,9 @@ export default function Navigator() {
                     className="logout_btn"
                     onClick={logout}> Logout </Button>
                 </div>
+                </Navbar>
             </Navbar>
 
-        </Container>
+        </container-fluid>
     );
 }
-
-

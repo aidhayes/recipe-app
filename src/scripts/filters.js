@@ -89,7 +89,7 @@ export default function Filters() {
                     
                     var recipe = 
                         <Link state={data} to={link} key={name}>
-                            <Image src={picture} width="150" height="150" />
+                            <Image className="recipeImg" src={picture} width="150" height="150" />
                             <p>{name.substring(0, 30)}</p>
                         </Link>;
                     tempArray.push(recipe);

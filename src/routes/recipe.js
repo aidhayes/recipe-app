@@ -60,6 +60,6 @@ function Favorite({recipe}) {
     }
 
     return (
-        <Button onClick={() => favoriteRecipe()}>Favorite</Button>
+      <Button className="favorite" onClick={() => favoriteRecipe()}>♥ Favorite</Button>
     )
 };
