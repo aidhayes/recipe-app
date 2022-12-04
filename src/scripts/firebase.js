@@ -1,6 +1,8 @@
 import { initializeApp } from "firebase/app";
 import { GoogleAuthProvider, getAuth, signInWithPopup, signInWithEmailAndPassword, createUserWithEmailAndPassword, sendPasswordResetEmail, signOut, } from "firebase/auth";
 import { getFirestore, query, getDocs, collection, where, addDoc, } from "firebase/firestore";
+
+//Variables
 const firebaseConfig = 
 {
     apiKey: "AIzaSyB1x3qWn_69B738XXkH8oHEZQBxOBi17Tk",
@@ -11,11 +13,15 @@ const firebaseConfig =
     appId: "1:491943591017:web:f953538facd126aed9f6f8",
     measurementId: "G-8VQB9T2E0Y"
 };
-
-const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
-const db = getFirestore(app);
+const app = initializeApp(firebaseConfig); //Intializes the Database base off the API key that is given
+const auth = getAuth(app); //Gets the authority to access data from the firebase
+const db = getFirestore(app); //Gets the data from the firebase
 const googleProvider = new GoogleAuthProvider();
+
+/**
+ * Allows user to sign in with a google account.
+ * @author Matthew Melendez
+ */
 const signInWithGoogle = async () => 
 {
   try 
@@ -41,6 +47,12 @@ const signInWithGoogle = async () =>
   }
 };
 
+/**
+ * Logs in the user with the cresidentials they provide.
+ * @param {*} email The email that the user inputs
+ * @param {*} password The password that the user inputs
+ * @author Matthew Melendez
+ */
 const logInWithEmailAndPassword = async (email, password) => 
 {
   try 
@@ -86,6 +98,10 @@ const sendPasswordReset = async (email) =>
   }
 };
 
+/**
+ * Logs the user out of their account.
+ * @author Matthew Melendez
+ */
 const logout = () => 
 {
   signOut(auth);
