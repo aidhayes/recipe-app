@@ -3,11 +3,8 @@ import { Link } from 'react-router-dom'
 import Image from 'react-bootstrap/Image'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-//import Col from 'react-bootstrap/Col';
-/**
- * 
- * @returns 
- */
+
+// Page that displays a users favorited recipes
 export default function Favorites() {
     let recipes = [];
     let favorites = JSON.parse(window.localStorage.getItem("favorites"));

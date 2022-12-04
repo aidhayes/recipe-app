@@ -13,10 +13,8 @@ import { Link } from 'react-router-dom'
 
 var searched = false;
 
-/**
- * Creates sidebar with filters to search for recipes
- * @returns Sidebar for filtering recipes
- */
+// Search for recipes using Edamam API. 
+// Input ingredients and return first 10 results
 export default function Filters() {
 
     const [recipeArray, setRecipeArray] = useState(["", ""]);
@@ -25,10 +23,8 @@ export default function Filters() {
     const [recipeArray3, setRecipeArray3] = useState(["", ""]);
     const [recipeArray4, setRecipeArray4] = useState(["", "",]);
 
-    /**
-     * https://stackoverflow.com/questions/63182107/how-can-i-get-a-value-from-a-react-bootstrap-form-on-submit
-     * @param {*} e 
-     */
+    
+     // Adapted from https://stackoverflow.com/questions/63182107/how-can-i-get-a-value-from-a-react-bootstrap-form-on-submit
     let onFormSubmit = e => {
         e.preventDefault()
         const formData = new FormData(e.target),
@@ -37,8 +33,6 @@ export default function Filters() {
             ingredientArray = Object.keys(formDataObj)
 
         var ingredients = ingredientArray.toString()
-
-        //console.log(ingredients)
 
         const axios = require("axios");
 
@@ -72,14 +66,7 @@ export default function Filters() {
                 tempSrc[i] = response.data.hits[i].recipe.source;
                 
             }
-            /*
-            var tempArray = [] // Temp recipe Array for storing images
-            for(let i = 0; i < 10; i++){ // Fill recipe array with images
-                var recipe = <a href={tempUrls[i]}><Image src={tempImgs[i]}/><Button variant="primary" type="submit">Favorite</Button><h2>{tempTxts[i]}</h2></a>;           
-                tempArray.push(recipe);
-            }
-            setRecipeArray(tempArray); // Set the recipe array which is loaded on form submit
-            */
+       
             for (let i = 0; i < 5; i++) {
                 var tempArray = []
                 for (let j = 0; j < 2; j++) {
