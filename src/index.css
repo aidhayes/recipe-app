@@ -28,7 +28,7 @@
 }
 
 .welcome {
-    margin-top: 100px;
+    margin-top: 200px;
     margin-left: 250px;
     margin-right: 250px;
     color: #665A48;
@@ -158,13 +158,14 @@ a {
 }
 
 .sign-in{
+    position: relative;
     color:rgb(0, 0, 0);
     background-color: #C8DBBE;
     border:none;
     font-weight:bold;
     padding:5px 15px 5px 15px;
     border-radius: 100px;
-    margin-right: 30px;
+    margin-right: 25px;
 
 }
 .login_button {
