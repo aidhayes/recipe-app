@@ -7,6 +7,8 @@ import React, { useEffect, useState } from 'react';
 import '../index.css';
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useNavigate } from "react-router-dom";
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import {
     auth,
     db,
@@ -19,7 +21,6 @@ import {
     where
 } from "firebase/firestore";
 
-import {FaUserCircle} from 'react-icons/fa';
 
 /**
  * Creates a navigation bar that will have links to the different
@@ -91,18 +92,24 @@ export default function Navigator() {
                 id="logged_out_div">
                     <button className="sign-in">Sign in</button>
                 </LinkContainer>
-                
-                <div id = "logged_in_div"
-                display = "none">
-                    <h5>Logged in as </h5>
-                    <div>{name}</div>
-                    <br></br>
-                    <div>{user?.email}</div>
-                    <br></br>
-                    <Button 
-                    className="logout_btn"
-                    onClick={logout}> Logout </Button>
-                </div>
+            
+
+                <Container id="logged_in_div" display="none">
+                    <Row>
+                        <Col>
+                            {name}
+                        </Col>
+                        <Col>
+                            <Button 
+                            className="logout_btn"
+                            onClick={logout}> 
+                            Logout 
+                            
+                            </Button>
+                        </Col>
+                    </Row>
+
+                </Container>
                 </Navbar>
             </Navbar>
 
