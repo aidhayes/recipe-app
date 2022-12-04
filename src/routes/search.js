@@ -3,7 +3,7 @@ import '../index.css';
 
 import Filters from '../scripts/filters';
 
-// Recipe search page
+// Page to be able to search for recipes by inputing ingredients
 export default function Search() {
     return (
         <>

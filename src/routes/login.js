@@ -20,7 +20,7 @@ import { LinkContainer } from 'react-router-bootstrap';
 
 
 
-// Login page
+// Page where a user will be able to login to their account either using an account they created or using Google
 export default function Login() {
 
     //Variables
