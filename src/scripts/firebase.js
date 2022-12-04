@@ -2,7 +2,9 @@ import { initializeApp } from "firebase/app";
 import { GoogleAuthProvider, getAuth, signInWithPopup, signInWithEmailAndPassword, createUserWithEmailAndPassword, sendPasswordResetEmail, signOut, } from "firebase/auth";
 import { getFirestore, query, getDocs, collection, where, addDoc, } from "firebase/firestore";
 
-//Variables
+//This is the firebase config that allows use to connect
+//to the firebase database which allows us to see who has
+//signed in or signed up to our website
 const firebaseConfig = 
 {
     apiKey: "AIzaSyB1x3qWn_69B738XXkH8oHEZQBxOBi17Tk",
@@ -65,6 +67,8 @@ const logInWithEmailAndPassword = async (email, password) =>
   }
 };
 
+//This is the function that allows users to sign up with 
+//their regular email
 const registerWithEmailAndPassword = async (name, email, password) => 
 {
   try 
@@ -85,6 +89,8 @@ const registerWithEmailAndPassword = async (name, email, password) =>
   }
 };
 
+//This is the function that allows users the reset their
+//passwords to their accounts
 const sendPasswordReset = async (email) => 
 {
   try 

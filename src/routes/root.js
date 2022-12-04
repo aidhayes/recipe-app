@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col';
 import { LinkContainer } from 'react-router-bootstrap';
 import React from 'react';
 
-// Landing page
+// Landing page for the website that will display navbar and have a link to sign in page
 export default function Root() {
     return (
         <>

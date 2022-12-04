@@ -9,6 +9,8 @@ import Image from 'react-bootstrap/Image'
 
 let favoriteRecipes = []
 
+// Dynamic pages that display a recipe from recipe search. User will be able to see ingredients, image, and an option to favorite. 
+// For full recipe, user can go to external site that is linked
 export default function Recipe() {
     const recipe = useLocation().state
     console.log(recipe)
@@ -58,6 +60,6 @@ function Favorite({recipe}) {
     }
 
     return (
-        <Button onClick={() => favoriteRecipe()}>Favorite</Button>
+      <Button className="favorite" onClick={() => favoriteRecipe()}>♥ Favorite</Button>
     )
 };

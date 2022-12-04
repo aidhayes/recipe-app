@@ -7,10 +7,7 @@ import Col from 'react-bootstrap/Col';
 import InputGroup from 'react-bootstrap/InputGroup';
 import React, { useState, useEffect } from 'react';
 import {FaEye} from 'react-icons/fa';
-import {
-    Link,
-    useNavigate
-} from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
     auth,
     signInWithGoogle,
@@ -18,11 +15,12 @@ import {
     registerWithEmailAndPassword
 } from '../scripts/firebase.js';
 import { useAuthState } from 'react-firebase-hooks/auth';
+import { LinkContainer } from 'react-router-bootstrap';
 
 
 
 
-// Login page
+// Page where a user will be able to login to their account either using an account they created or using Google
 export default function Login() {
 
     //Variables
@@ -35,7 +33,7 @@ export default function Login() {
         if(loading) {
             return;
         }
-        if(user) navigate("/recipe/search");
+        if(user) navigate("/search");
     }, [user, loading]);
     
     //Helper Fuctions
@@ -97,7 +95,6 @@ export default function Login() {
                             </InputGroup>
                             <Button 
                             variant="shadow-non" 
-                            type="submit" 
                             className="login"
                             onClick={() => logInWithEmailAndPassword(inputs.email, inputs.password)}>
                                 Login 
@@ -105,7 +102,6 @@ export default function Login() {
                             <br></br>
                             <Button 
                             variant="shadow-non" 
-                            type="submit" 
                             className="google_Login"
                             onClick={signInWithGoogle}>
                                 Login with Google
@@ -113,9 +109,8 @@ export default function Login() {
                             <br></br>
                             <Button
                             variant="shadow-non"
-                            type="submit"
                             className="signup"
-                            onClick={() => registerWithEmailAndPassword(inputs.email, inputs.password)}>
+                            onClick={() => registerWithEmailAndPassword(inputs.name, inputs.email, inputs.password)}>
                                 Sign up
                             </Button>
                         </Form.Group>

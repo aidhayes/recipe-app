@@ -12,6 +12,7 @@ import Search from './routes/search';
 import Login from './routes/login';
 import Recipe from "./routes/recipe";
 import { Container } from 'react-bootstrap';
+import Register from './routes/register';
 
 // App function, mainly used for defining Routes
 export default function App() {
@@ -21,11 +22,12 @@ export default function App() {
             <Navigator />
             <Container>
                 <Routes>
-                    <Route exact path="/" element={<Root />} />
-                    <Route path="/search" element={<Search />} />
-                    <Route path="/login" element={<Login />} />
-                    <Route path="/recipe/:name" element={<Recipe/>}/>
-                    <Route path="/favorites" element={<Favorites/>}/>
+                    <Route index exact path="/" element={<Root />} />
+                    <Route exact path="/search" element={<Search />} />
+                    <Route exact path="/login" element={<Login />} />
+                    <Route exact path="/register" element={<Register />} />
+                    <Route exact path="/recipe/:name" element={<Recipe/>}/>
+                    <Route exact path="/favorites" element={<Favorites/>}/>
                 </Routes>
             </Container>
         </>
