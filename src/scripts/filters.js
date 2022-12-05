@@ -190,7 +190,7 @@ export default function Filters() {
                                                                 </Accordion.Body>
                                                         </Accordion.Item>
                                                         <Accordion.Item eventKey="2">
-                                                            <Accordion.Header>B</Accordion.Header>
+                                                            <Accordion.Header>C</Accordion.Header>
                                                                 <Accordion.Body>
                                                                     <Form.Check type="checkbox" name="Carrots" label="Carrots" />
                                                                     <Form.Check type="checkbox" name="Celery" label="Celery" />
