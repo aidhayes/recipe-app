@@ -5,6 +5,7 @@ import { getFirestore, query, getDocs, collection, where, addDoc, } from "fireba
 //This is the firebase config that allows use to connect
 //to the firebase database which allows us to see who has
 //signed in or signed up to our website
+//@author Joseph LaBianca
 const firebaseConfig = 
 {
     apiKey: "AIzaSyB1x3qWn_69B738XXkH8oHEZQBxOBi17Tk",
